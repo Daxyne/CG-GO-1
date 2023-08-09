@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./vendor/css/style.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=nippo@500,700,400&display=swap" rel="stylesheet">
+    <title>CS:GO</title>
+</head>
+
+<body>
+    <div class="main-site-container">
+        <!-- csgo-UpperHeader Start -->
+        <div class="csgo-upperHeader-container">
+            <img src="./assets/logo.svg" alt="">
+        </div>
+        <!-- csgo-UpperHeader End -->
+        <!-- csgo-Header Start -->
+        <div class="main-site-inner-section">
+            <div class="csgo-header-container">
+                <!-- <div class="left">logo</div> -->
+
+                <div class="addLocationProduct-dropdown">
+                    <div class="addLocationProduct-toggle" onclick="addLocationProducttoggleDropdown()">
+                        <img src="./assets/img/CSGO.png" alt="">
+                        CS:GO <span class="addLocationProduct-arrow"></span>
+                    </div>
+                    <div class="addLocationProduct-dropdown-menu">
+                        <p class="addLocationProduct-option" href="#">CS:GO</p>
+                        <p class="addLocationProduct-option" href="#">Valorant</p>
+                        <p class="addLocationProduct-option" href="#">Call Of Duty</p>
+                    </div>
+                </div>
+
+
+                <div class="csgo-menu-conatiner">
+                    <ul>
+                        <li><a href="#">CS:GO Boost</a></li>
+                        <li><a href="#">Faceit Boost</a></li>
+                        <li><a href="#">Esea Boost</a></li>
+                        <li><a href="#">Esportal Boost</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Company</a></li>
+                        <button class="csgo-login-btn responsive-login-btn mt-10px">Track Order</button>
+
+                    </ul>
+                </div>
+                <button class="csgo-login-btn">Track Order</button>
+                <!--  -->
+                <div class="sidebar-header">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+                <!--  -->
+            </div>
+        </div>
+        <!-- csgo-Header End -->
+        <!-- csgo-HeroSection Start -->
+        <div class="csgo-heroSection-main-conatiner">
+            <div class="csgo-heroSection-text-container">
+                <h1>Raise your rank up to <span>Global Elite</span> with our help.</h1>
+                <p>Get a rank you deserve with our professional CSGO Boosting team. Our members can boost you to any
+                    rank in any CS:GO Competition. So far We've boosted more than 30000+ players in +8 years. If you
+                    are bored of playing with trolls and unskilled players - purchase boost now and our professional
+                    players will help you with winning matches.</p>
+            </div>
+            <div class="csgo-heroSection-img-container">
+                <img src="./assets/img/hero.png" alt="">
+            </div>
+            <img src="./assets/img/right-hero-angle.png" alt="" class="hero-angle-corner-img">
+        </div>
+        <!-- csgo-HeroSection End -->
+        <!-- csgo-HomeBoost Start -->
+        <div class="csgo-HomeBoost-conatianer">
+            <img src="./assets/img/homeBoost-bg.jpg" alt="">
+            <!--  -->
+            <div class="csgo-HomeBoost-tabs-conatiner">
+                <div class="csgo-boost-tabs">
+                    <div class="svg-shape csgo-boost-tab active" onclick="openTab(0)"><span>Faceit Level Boost</span>
+                    </div>
+                    <div class="svg-shape csgo-boost-tab" onclick="openTab(1)"><span>Esportal Win Boost</span></div>
+                    <div class="svg-shape csgo-boost-tab" onclick="openTab(2)"><span>Faceit Win Boost</span></div>
+                    <div class="svg-shape csgo-boost-tab" onclick="openTab(3)"><span>Esportal Boost</span></div>
+                </div>
+
+                <div class="csgo-boost-content">
+                    <div class="csgo-boost-tab-content active" id="csgo-boost-tab1">
+                        <div class="csgo-boost-para">
+                            <h2>Rank Boost</h2>
+                            <h5>This is the most convenient way to raise your Rank to Global Elite. The services are
+                                available in both matchmaking and wingman, and only the prime status clients accepted
+                                for execution. Also, the calculation can be made by wins.</h5>
+                            <button class="csgo-btn">Get Started Now</button>
+                        </div>
+                        <img src="./assets/img/pngkey 1.svg" class="homeboost-hero" alt="">
+                    </div>
+                    <div class="csgo-boost-tab-content" id="csgo-boost-tab2">
+                        <div class="csgo-boost-para">
+                            <h2>Esport Boosting</h2>
+                            <h5>This is the most convenient way to raise your Rank to Global Elite. The services are
+                                available in both matchmaking and wingman, and only the prime status clients accepted
+                                for execution. Also, the calculation can be made by wins.</h5>
+                            <button class="csgo-btn">Get Started Now</button>
+                        </div>
+                        <img src="./assets/img/pngkey 1.svg" alt="">
+
+                    </div>
+                    <div class="csgo-boost-tab-content" id="csgo-boost-tab3">
+                        <div class="csgo-boost-para">
+                            <h2>Faceit Boosting</h2>
+                            <h5>This is the most convenient way to raise your Rank to Global Elite. The services are
+                                available in both matchmaking and wingman, and only the prime status clients accepted
+                                for execution. Also, the calculation can be made by wins.</h5>
+                            <button class="csgo-btn">Get Started Now</button>
+                        </div>
+                        <img src="./assets/img/pngkey 1.svg" alt="">
+
+                    </div>
+                    <div class="csgo-boost-tab-content" id="csgo-boost-tab4">
+                        <div class="csgo-boost-para">
+                            <h2>Esport Boosting</h2>
+                            <h5>This is the most convenient way to raise your Rank to Global Elite. The services are
+                                available in both matchmaking and wingman, and only the prime status clients accepted
+                                for execution. Also, the calculation can be made by wins.</h5>
+                            <button class="csgo-btn">Get Started Now</button>
+                        </div>
+                        <img src="./assets/img/pngkey 1.svg" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+        </div>
+        <!-- csgo-HomeBoost End -->
+        <!-- csgo-HomeBoost Start -->
+        <div class="csgo-HomeFeatures-container">
+            <div class="csgo-HomeFeatures-innerSection">
+                <div class="csgo-HomeFeatures-box">
+                    <h3>Why you should trust us?</h3>
+                </div>
+                <div class="csgo-HomeFeatures-box">
+                    <img src="./assets/img/features-card.png" alt="">
+                    <div class="csgo-HomeFeatures-deatil-container">
+                        <span><img src="./assets/icons/diamend.svg" alt=""></span>
+                        <h4>Guaranteed Rank</h4>
+                        <p>In boostcsgo.net we sell only guaranteed services, which means our boosters will quickly
+                            advance to your dream rank or you will get money back.</p>
+                    </div>
+                </div>
+                <div class="csgo-HomeFeatures-box">
+                    <img src="./assets/img/features-card.png" alt="">
+                    <div class="csgo-HomeFeatures-deatil-container">
+                        <span><img src="./assets/icons/security.svg" alt=""></span>
+                        <h4>Totally Secure</h4>
+                        <p>In boostcsgo.net we sell only guaranteed services, which means our boosters will quickly
+                            advance to your dream rank or you will get money back.</p>
+                    </div>
+                </div>
+                <div class="csgo-HomeFeatures-box">
+                    <img src="./assets/img/features-card.png" alt="">
+                    <div class="csgo-HomeFeatures-deatil-container">
+                        <span><img src="./assets/icons/privacy-eye.svg" alt=""></span>
+                        <h4>Complete Privacy</h4>
+                        <p>In boostcsgo.net we sell only guaranteed services, which means our boosters will quickly
+                            advance to your dream rank or you will get money back.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- csgo-HomeBoost End -->
+
+        <!-- csgo-HomeBoosting Services Start -->
+        <div class="csgo-HomeBoosting-services-container">
+            <div class="csgo-HomeBoosting-services-innerSection">
+                <h1>Top Notch Quality Rank<br> Boosting Services</h1>
+                <div class="csgo-HomeBoosting-services-line-container">
+
+                    <div class="csgo-HomeBoosting-services-section-conatiner-one">
+                        <div class="csgo-HomeBoosting-services-section">
+                            <div class="csgo-HomeBoosting-services-box">
+                                <h3>FAST CSGO BOOST IS PRIORITY</h3>
+                                <p>We usually start every boosting order within 1h after receiving the money. In most
+                                    cases
+                                    our boosters need only few hours to rank up. They play at least 5-15 matches per
+                                    day.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="csgo-HomeBoosting-services-section">
+                            <div class="csgo-HomeBoosting-services-box">
+                                <h3>ONLY LEGIT CS:GO BOOSTERS</h3>
+                                <p>We usually start every boosting order within 1h after receiving the money. In most
+                                    cases
+                                    our boosters need only few hours to rank up. They play at least 5-15 matches per
+                                    day.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="csgo-HomeBoosting-services-line">
+                        <span class="csgo-HomeBoosting-services-line-span"></span>
+                        <span class="csgo-HomeBoosting-services-line-span"></span>
+                        <span class="csgo-HomeBoosting-services-line-span"></span>
+                    </div>
+                    <!--  -->
+
+                    <div class="csgo-HomeBoosting-services-section">
+                        <div class="csgo-HomeBoosting-services-box">
+                            <h3>ONLY LEGIT CS:GO BOOSTERS</h3>
+                            <p>We usually start every boosting order within 1h after receiving the money. In most cases
+                                our boosters need only few hours to rank up. They play at least 5-15 matches per day.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- csgo-HomeBoosting Services End -->
+
+        <!-- csgo-whychoose Services Start -->
+        <div class="csgo-HomeWhyChoose-services-container">
+            <img src="./assets/img/Rectangle 11.png" alt="" class="HomeWhyChoose-img">
+            <div class="csgo-HomeWhyChoose-services-img-section">
+                <img src="./assets/img/Intersect.png" alt="">
+            </div>
+            <div class="csgo-HomeWhyChoose-services-detail-section">
+                <h3>Why choose our CS:GO Boosting Services?</h3>
+                <p>We are the go-to brand for trusted CS:GO services. Boostcsgo.net is a worldwide, boosting service
+                    with many years of experience in boosting people in Counter Strike: Global Offensive. We have
+                    boosted more than 30000 accounts, there is no boost that will make a problem for our professionals,
+                    and they will finish every order as fast as possible - from official valve matchmaking: CS:GO Rank
+                    boost and CS:GO Wingman Boost to orders in most popular csgo leagues like: Faceit Boost, Esea Boost
+                    or Esportal Boost.</p>
+                <div class="csgo-HomeWhyChoose-happyCustomers-section">
+                    <div class="csgo-HomeWhyChoose-happyCustomers-box">
+                        <img src="./assets/img/Rectangle 10.png" alt="">
+                        <div class="csgo-HomeWhyChoose-happyCustomers-txt-box">
+                            <h5>20k</h5>
+                            <h6>HAPPY CUSTOMERS</h6>
+                        </div>
+                    </div>
+                    <div class="csgo-HomeWhyChoose-happyCustomers-box">
+                        <img src="./assets/img/Rectangle 10.png" alt="">
+                        <div class="csgo-HomeWhyChoose-happyCustomers-txt-box">
+                            <h5>8</h5>
+                            <h6>YEAS IN BOOSTING</h6>
+                        </div>
+                    </div>
+                    <div class="csgo-HomeWhyChoose-happyCustomers-box">
+                        <img src="./assets/img/Rectangle 10.png" alt="">
+                        <div class="csgo-HomeWhyChoose-happyCustomers-txt-box">
+                            <h5>30k</h5>
+                            <h6>ORDERS COMPLETED</h6>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- csgo-whychoose Services End -->
+
+        <!-- csgo-whychoose Services Start -->
+        <div class="csgo-HomeReview-container">
+            <h3>Real Customer Reviews</h3>
+            <p>All the reviews about our boosting services can be found on our Trustpilot profile. Check some of them,
+                they speak for themselves!</p>
+
+            <div class="csgo-HomeReview-carousel-container">
+                <div class="csgo-HomeReview-carousel">
+                    <div class="csgo-HomeReview-cards">
+
+                        <div class="csgo-HomeReview-card">
+                            <img src="./assets/img/Group 3.png" alt="">
+                            <div class="csgo-HomeReview-person-detail">
+                                <p>Better than expectations. Used them twice now (Duo/Lobby Boost). Was a bit
+                                    scared/skeptical with boosting services but using this service has put my fears to
+                                    rest.
+                                </p>
+                                <div class="csgo-HomeReview-person-span">
+                                    <span><img src="./assets/img/Avatar.png" alt=""></span>
+                                    <h6>Gamer</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="csgo-HomeReview-card">
+                            <img src="./assets/img/Group 3.png" alt="">
+                            <div class="csgo-HomeReview-person-detail">
+                                <p>Better than expectations. Used them twice now (Duo/Lobby Boost). Was a bit
+                                    scared/skeptical with boosting services but using this service has put my fears to
+                                    rest.
+                                </p>
+                                <div class="csgo-HomeReview-person-span">
+                                    <span><img src="./assets/img/Avatar.png" alt=""></span>
+                                    <h6>Gamer</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="csgo-HomeReview-card">
+                            <img src="./assets/img/Group 3.png" alt="">
+                            <div class="csgo-HomeReview-person-detail">
+                                <p>Better than expectations. Used them twice now (Duo/Lobby Boost). Was a bit
+                                    scared/skeptical with boosting services but using this service has put my fears to
+                                    rest.
+                                </p>
+                                <div class="csgo-HomeReview-person-span">
+                                    <span><img src="./assets/img/Avatar.png" alt=""></span>
+                                    <h6>Gamer</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="csgo-HomeReview-card">
+                            <img src="./assets/img/Group 3.png" alt="">
+                            <div class="csgo-HomeReview-person-detail">
+                                <p>Better than expectations. Used them twice now (Duo/Lobby Boost). Was a bit
+                                    scared/skeptical with boosting services but using this service has put my fears to
+                                    rest.
+                                </p>
+                                <div class="csgo-HomeReview-person-span">
+                                    <span><img src="./assets/img/Avatar.png" alt=""></span>
+                                    <h6>Gamer</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="csgo-HomeReview-card">
+                            <img src="./assets/img/Group 3.png" alt="">
+                            <div class="csgo-HomeReview-person-detail">
+                                <p>Better than expectations. Used them twice now (Duo/Lobby Boost). Was a bit
+                                    scared/skeptical with boosting services but using this service has put my fears to
+                                    rest.
+                                </p>
+                                <div class="csgo-HomeReview-person-span">
+                                    <span><img src="./assets/img/Avatar.png" alt=""></span>
+                                    <h6>Gamer</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="csgo-HomeReview-arrow-buttons">
+                    <button class="csgo-HomeReview-left-arrow"><img src="./assets/icons/right-arrow.svg"
+                            alt=""></button>
+                    <button class="csgo-HomeReview-right-arrow"><img src="./assets/icons/left-arrow.svg"
+                            alt=""></button>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- csgo-whychoose Services End -->
+
+        <!-- csgo-faqs-sections start -->
+        <div class="accordion">
+            <h1>Frequently Asked Questions</h1>
+            <div class="accordion-item">
+                <div class="accordion-item-header">
+                    What is BuyBoosting.com?
+                </div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">
+                        We are a company that operates a safe and a top tier boosting platform for online games. Our
+                        boosting services are accessible worldwide. We achieve this by recruiting the best performing
+                        boosters from each region for the games we boost. We guarantee the highest standards of online
+                        game boosting available with the help on our professional boosting team, customer-centric
+                        approach and easy to use interface.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-item-header">
+                    What is BuyBoosting.com?
+                </div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">
+                        We are a company that operates a safe and a top tier boosting platform for online games. Our
+                        boosting services are accessible worldwide. We achieve this by recruiting the best performing
+                        boosters from each region for the games we boost. We guarantee the highest standards of online
+                        game boosting available with the help on our professional boosting team, customer-centric
+                        approach and easy to use interface.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-item-header">
+                    What is BuyBoosting.com?
+                </div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">
+                        We are a company that operates a safe and a top tier boosting platform for online games. Our
+                        boosting services are accessible worldwide. We achieve this by recruiting the best performing
+                        boosters from each region for the games we boost. We guarantee the highest standards of online
+                        game boosting available with the help on our professional boosting team, customer-centric
+                        approach and easy to use interface.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- csgo-faqs-sections start -->
+
+        <!-- csgo-Subscribe Section Start -->
+        <div class="csgo-HomeSubscribe-container">
+            <div class="csgo-h1-Subscribe">
+                <h5 class="trns-text">SUBSCRIBE</h5>
+                <h6>WANT MORE ?</h6>
+                <p>Sign up to our newsletter and receive regular updates from our side and avail best discounts </p>
+            </div>
+            <div class="csgo-subscribe-email-container">
+                <div class="csgo-subscribe-email-section">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="500" height="80" viewBox="0 0 500 80" fill="none">
+                        <path d="M1.5 78.5V1.5H498.5V47.6811L450.559 78.5H1.5Z" stroke="url(#paint0_linear_158_4146)"
+                            stroke-opacity="0.8" stroke-width="3" />
+                        <defs>
+                            <linearGradient id="paint0_linear_158_4146" x1="250" y1="-31.25" x2="253.75" y2="173.75"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FD432A" />
+                                <stop offset="1" stop-color="#FD2AA9" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <input type="text" placeholder="ENTER YOUR EMAIL ADDRESS">
+                </div>
+                <button class="csgo-btn SUBSCRIBE-btn">SUBSCRIBE</button>
+            </div>
+        </div>
+        <!-- csgo-Subscribe Section End -->
+
+        <!-- csgo-Footer Section Start -->
+        <div class="csgo-HomeFooter-container">
+            <img src="./assets/logo.svg" alt="" class="footer-logo">
+            <div class="csgo-Home-InnerFooter-container">
+                <div class="csgo-Home-InnerFooter-section">
+                    <h5>CONTACT US</h5>
+                    <div class="footer-line-span"></div>
+                    <ul class="csgo-footer-list-container">
+                        <li><a href="#"><img src="./assets/icons/facebook.svg" alt="">Facebook</a></li>
+                        <li><a href="#"><img src="./assets/icons/twitch.svg" alt="">Twitch</a></li>
+                        <li><a href="#"><img src="./assets/icons/twitter.svg" alt="">Twitter</a></li>
+                        <li><a href="#"><img src="./assets/icons/mail.svg" alt="">Mail Us</a></li>
+                    </ul>
+                </div>
+                <div class="csgo-Home-InnerFooter-section">
+                    <h5>SERVICES</h5>
+                    <div class="footer-line-span"></div>
+                    <ul class="csgo-footer-list-container">
+                        <li><a href="#">CS:GO Boosting</a></li>
+                        <li><a href="#">Faceit Boosting</a></li>
+                        <li><a href="#">Esea Boosting</a></li>
+                        <li><a href="#">Esportal Boosting</a></li>
+                    </ul>
+                </div>
+                <div class="csgo-Home-InnerFooter-section">
+                    <h5>HELP</h5>
+                    <div class="footer-line-span"></div>
+                    <ul class="csgo-footer-list-container">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="lowerfooter">
+            <h6>2014 - 2023 © THEMEOWL.NET. All rights reserved.</h6>
+            <p>Counter-Strike: Global Offensive is a registered trademark of Valve Corporation Company We are in no way
+                affiliated with, associated with or endorsed by Valve Corporation.</p>
+        </div>
+        <!-- csgo-Footer Section End -->
+
+
+
+        <!--Responsive Mob sidebar area start -->
+
+        <!-- <div class="sidebar__area">
+            <div class="sidebar__wrapper">
+                <div class="sidebar__close">
+                    <button class="sidebar__close-btn" id="sidebar__close-btn">
+                        <span><img src="./vendor/Icons/akar-icons_cross.svg" style="width: 20px; height: 20px;"
+                                alt=""></span>
+                        <span>close</span>
+                    </button>
+                </div>
+                <div class="sidebar__content">
+                    <div class="logo-mob">
+                        <a href="">
+                            <img src="vendor/logo.svg" alt="LogoIps logo"
+                                style="width:50%; height:50%;padding-left: 15px;">
+                        </a>
+                    </div>
+
+                    <div class="mobile-menu">
+                        <div class="center-side-nav mt-3">
+                            <ul>
+                                <li class="mobile-li">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                            viewBox="0 0 24 24">
+                                            <path fill="currentColor" d="M4 21V9l8-6l8 6v12h-6v-7h-4v7Z" />
+                                        </svg>
+                                        Home
+                                    </a>
+                                </li>
+
+
+
+                                <li class="mobile-li Categories-li-mob">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M4 11h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1zm10 0h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1zM4 21h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1zm13 0c2.206 0 4-1.794 4-4s-1.794-4-4-4s-4 1.794-4 4s1.794 4 4 4z" />
+                                    </svg>
+                                    Categories
+                                </li>
+                                <div class="dropdown-mob">
+                                    <div class="dropdown-content-mob ">
+                                        <div class="dropdown-txt-mob dropdown-txt-mob-windows">
+                                            <h6>Windows</h6>
+                                            <p>Windows software refers to computer<br>programs designed.</p>
+
+                                            <div class="dropdown-content-inner2-right-mob">
+                                                <a href="">
+                                                    <div class="dropRight-container">
+                                                        <img src="vendor/Icons/Windows.svg" alt="">
+                                                        <div class="dropRight-txt">
+                                                            <h6>Engineering</h6>
+                                                            <p>Lorem ipsum dolor.</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+
+                                                <a href="">
+                                                    <div class="dropRight-container ">
+                                                        <img src="vendor/Icons/Windows.svg" alt="">
+                                                        <div class="dropRight-txt ">
+                                                            <h6>Drivers</h6>
+                                                            <p>Lorem ipsum dolor.</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="">
+                                                    <div class="dropRight-container">
+                                                        <img src="vendor/Icons/Windows.svg" alt="">
+                                                        <div class="dropRight-txt">
+                                                            <h6>Engineering</h6>
+                                                            <p>Lorem ipsum dolor.</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+
+                                                <a href="">
+                                                    <div class="dropRight-container">
+                                                        <img src="vendor/Icons/Windows.svg" alt="">
+                                                        <div class="dropRight-txt ">
+                                                            <h6>Drivers</h6>
+                                                            <p>Lorem ipsum dolor.</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="">
+                                                    <div class="dropRight-container ">
+                                                        <img src="vendor/Icons/Windows.svg" alt="">
+                                                        <div class="dropRight-txt">
+                                                            <h6>Engineering</h6>
+                                                            <p>Lorem ipsum dolor.</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+
+                                                <a href="">
+                                                    <div class="dropRight-container ">
+                                                        <img src="vendor/Icons/Windows.svg" alt="">
+                                                        <div class="dropRight-txt ">
+                                                            <h6>Drivers</h6>
+                                                            <p>Lorem ipsum dolor.</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="">
+                                                    <div class="dropRight-container ">
+                                                        <img src="vendor/Icons/Windows.svg" alt="">
+                                                        <div class="dropRight-txt">
+                                                            <h6>Engineering</h6>
+                                                            <p>Lorem ipsum dolor.</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+
+                                                <a href="">
+                                                    <div class="dropRight-container ">
+                                                        <img src="vendor/Icons/Windows.svg" alt="">
+                                                        <div class="dropRight-txt ">
+                                                            <h6>Drivers</h6>
+                                                            <p>Lorem ipsum dolor.</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="dropdown-txt-mob dropdown-txt-mob-android">
+                                            <h6>Android</h6>
+                                            <p>Android software refers to computer<br>programs designed .</p>
+
+                                            <div class="dropdown-content-inner2-right-mob-android">
+                                                <a href="">
+                                                    <div class="dropRight-container ">
+                                                        <img src="vendor/Icons/Windows.svg" alt="">
+                                                        <div class="dropRight-txt">
+                                                            <h6>Engineering</h6>
+                                                            <p>Lorem ipsum dolor.</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+
+                                                <a href="">
+                                                    <div class="dropRight-container ">
+                                                        <img src="vendor/Icons/Windows.svg" alt="">
+                                                        <div class="dropRight-txt ">
+                                                            <h6>Drivers</h6>
+                                                            <p>Lorem ipsum dolor.</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="dropdown-txt-mob dropdown-txt-mob-mac">
+                                            <h6>Mac</h6>
+                                            <p>Mac software refers to computer<br>programs designed .</p>
+
+                                            <div class="dropdown-content-inner2-right-mob-mac">
+                                                <a href="">
+                                                    <div class="dropRight-container ">
+                                                        <img src="vendor/Icons/Windows.svg" alt="">
+                                                        <div class="dropRight-txt">
+                                                            <h6>Engineering</h6>
+                                                            <p>Lorem ipsum dolor.</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+
+                                                <a href="">
+                                                    <div class="dropRight-container ">
+                                                        <img src="vendor/Icons/Windows.svg" alt="">
+                                                        <div class="dropRight-txt ">
+                                                            <h6>Drivers</h6>
+                                                            <p>Lorem ipsum dolor.</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                                <li class="mobile-li mobile-li-window">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 256 256">
+                                        <path fill="currentColor"
+                                            d="M112 144v51.6a8.1 8.1 0 0 1-2.9 6.2a7.8 7.8 0 0 1-5.1 1.8h-1.4l-64-11.6a8 8 0 0 1-6.6-8v-40a8 8 0 0 1 8-8h64a8 8 0 0 1 8 8Zm-2.9-89.8a8 8 0 0 0-6.5-1.7l-64 11.6A8 8 0 0 0 32 72v40a8 8 0 0 0 8 8h64a8 8 0 0 0 8-8V60.4a8.1 8.1 0 0 0-2.9-6.2Zm112-20.3a7.7 7.7 0 0 0-6.5-1.8l-80 14.6a8 8 0 0 0-6.6 7.8V112a8 8 0 0 0 8 8h80a8 8 0 0 0 8-8V40a7.9 7.9 0 0 0-2.9-6.1ZM216 136h-80a8 8 0 0 0-8 8v57.5a8 8 0 0 0 6.6 7.8l80 14.6h1.4a7.4 7.4 0 0 0 5.1-1.9a7.9 7.9 0 0 0 2.9-6v-72a8 8 0 0 0-8-8Z" />
+                                    </svg>
+                                    Windows
+                                </li>
+                                <div class="dropdown-content-inner2-right-mob-window-single">
+                                    <a href="">
+                                        <div class="dropRight-container ">
+                                            <img src="vendor/Icons/Windows.svg" alt="">
+                                            <div class="dropRight-txt">
+                                                <h6>Engineering</h6>
+                                                <p>Lorem ipsum dolor.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="">
+                                        <div class="dropRight-container ">
+                                            <img src="vendor/Icons/Windows.svg" alt="">
+                                            <div class="dropRight-txt ">
+                                                <h6>Drivers</h6>
+                                                <p>Lorem ipsum dolor.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+
+
+                                <li class="mobile-li mobile-li-android">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="m14.975 3.019l.96-1.732a.193.193 0 0 0-.338-.187l-.97 1.75a6.541 6.541 0 0 0-5.253 0l-.97-1.75a.193.193 0 0 0-.34.187l.96 1.732a5.546 5.546 0 0 0-3.092 4.876h12.137a5.546 5.546 0 0 0-3.094-4.876ZM9.2 5.674a.507.507 0 1 1 .507-.506a.507.507 0 0 1-.507.506Zm5.602 0a.507.507 0 1 1 .507-.506a.507.507 0 0 1-.507.506ZM5.93 17.171A1.467 1.467 0 0 0 7.4 18.64h.973v3a1.36 1.36 0 1 0 2.721 0v-3h1.814v3a1.36 1.36 0 1 0 2.72 0v-3h.974a1.467 1.467 0 0 0 1.468-1.468V8.375H5.93Zm-1.867-9.03a1.362 1.362 0 0 0-1.36 1.361v5.669a1.36 1.36 0 1 0 2.72 0V9.502a1.362 1.362 0 0 0-1.36-1.36Zm15.872 0a1.362 1.362 0 0 0-1.36 1.361v5.669a1.36 1.36 0 1 0 2.72 0V9.502a1.362 1.362 0 0 0-1.36-1.36Z" />
+                                    </svg>
+                                    Android
+                                </li>
+                                <div class="dropdown-content-inner2-right-mob-android-single">
+                                    <a href="">
+                                        <div class="dropRight-container ">
+                                            <img src="vendor/Icons/Windows.svg" alt="">
+                                            <div class="dropRight-txt">
+                                                <h6>Engineering</h6>
+                                                <p>Lorem ipsum dolor.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="">
+                                        <div class="dropRight-container ">
+                                            <img src="vendor/Icons/Windows.svg" alt="">
+                                            <div class="dropRight-txt ">
+                                                <h6>Drivers</h6>
+                                                <p>Lorem ipsum dolor.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+
+                                <li class="mobile-li mobile-li-mac">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 26 26">
+                                        <path fill="currentColor"
+                                            d="M23.934 18.947c-.598 1.324-.884 1.916-1.652 3.086c-1.073 1.634-2.588 3.673-4.461 3.687c-1.666.014-2.096-1.087-4.357-1.069c-2.261.011-2.732 1.089-4.4 1.072c-1.873-.017-3.307-1.854-4.381-3.485c-3.003-4.575-3.32-9.937-1.464-12.79C4.532 7.425 6.61 6.237 8.561 6.237c1.987 0 3.236 1.092 4.879 1.092c1.594 0 2.565-1.095 4.863-1.095c1.738 0 3.576.947 4.889 2.581c-4.296 2.354-3.598 8.49.742 10.132zM16.559 4.408c.836-1.073 1.47-2.587 1.24-4.131c-1.364.093-2.959.964-3.891 2.092c-.844 1.027-1.544 2.553-1.271 4.029c1.488.048 3.028-.839 3.922-1.99z" />
+                                    </svg>
+                                    Mac
+                                </li>
+                                <div class="dropdown-content-inner2-right-mob-mac-single">
+                                    <a href="">
+                                        <div class="dropRight-container ">
+                                            <img src="vendor/Icons/Windows.svg" alt="">
+                                            <div class="dropRight-txt">
+                                                <h6>Engineering</h6>
+                                                <p>Lorem ipsum dolor.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="">
+                                        <div class="dropRight-container ">
+                                            <img src="vendor/Icons/Windows.svg" alt="">
+                                            <div class="dropRight-txt ">
+                                                <h6>Drivers</h6>
+                                                <p>Lorem ipsum dolor.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+
+                                <li class="li_iconSearch">
+                                    <div class="search_icon_container">
+                                        <span class="header_search_icon">
+                                            <svg width="22" height="22" stroke-width="1.5" viewBox="0 0 24 24"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M15.5 15.5L19 19" stroke="#121212" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M5 11C5 14.3137 7.68629 17 11 17C12.6597 17 14.1621 16.3261 15.2483 15.237C16.3308 14.1517 17 12.654 17 11C17 7.68629 14.3137 5 11 5C7.68629 5 5 7.68629 5 11Z"
+                                                    stroke="#55545b" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </li>
+
+
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!--Responsive Mob sidebar area End -->
+
+
+        <!-- <div class="body-overlay"></div> -->
+
+
+
+    </div>
+    <!-- csgo-HomeBoosting Services End -->
+
+    <!-- Script -->
+    <script src="./vendor/js/app.js"></script>
+    <script src="./vendor/js/carousel.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,3602 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    --primary-white: #FFFFFF;
+    --primary-clr: #FD3E2A;
+    --primary-text-clr: #BEBEBE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary-white);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: var(--primary-white);
+    text-decoration: none;
+}
+
+body {
+    background: #1A1A2C;
+}
+
+.mt-10px {
+    margin-top: 10px !important;
+}
+
+.main-site-container {}
+
+.main-site-inner-section {
+    margin: 0px 70px;
+}
+
+/* UpperHeader start */
+.csgo-upperHeader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 26px 0px;
+}
+
+/* UpperHeader end */
+
+/* Header Start */
+.csgo-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px;
+    background: #1A1A2C;
+    border-top: 1px solid #282834;
+    border-bottom: 1px solid #282834;
+}
+
+
+.addLocationProduct-dropdown {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+    width: 150px;
+    height: 60px;
+    border-radius: 8px;
+    padding: 10px 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.addLocationProduct-dropdown:hover {
+    border-radius: 8px;
+    background: #43436F;
+}
+
+.addLocationProduct-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 15px 5px 5px;
+    color: #EFF3FB;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.addLocationProduct-toggle img {
+    margin-right: 10px;
+}
+
+.addLocationProduct-arrow {
+    position: absolute;
+    right: 20px;
+    display: inline-block;
+    width: 0.4em;
+    height: 0.4em;
+    border-right: 1px solid #EFF3FB;
+    border-bottom: 1px solid #EFF3FB;
+    transform: rotate(45deg);
+    margin-left: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.addLocationProduct-toggle.open .addLocationProduct-arrow {
+    transform: rotate(-135deg);
+}
+
+.addLocationProduct-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 150px;
+    color: var(--primary-text-clr);
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    max-height: 0;
+    overflow: hidden;
+    cursor: pointer;
+    border-top: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    background: var(--primary, #1A1A2C);
+    z-index: 1;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.addLocationProduct-toggle.open+.addLocationProduct-dropdown-menu {
+    max-height: 200px;
+    border: 2px solid #43436F;
+    overflow-y: none;
+}
+
+.addLocationProduct-option {
+    display: block;
+    padding: 10px;
+    color: var(--primary-text-clr);
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.addLocationProduct-option:hover {
+    background-color: #282834;
+}
+
+.csgo-menu-conatiner {}
+
+.csgo-menu-conatiner ul {
+    display: flex;
+}
+
+.csgo-menu-conatiner ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.csgo-menu-conatiner ul li {
+    position: relative;
+    margin-right: 30px;
+}
+
+.csgo-menu-conatiner ul li a {
+    display: block;
+    text-decoration: none;
+    color: #BEBEBE;
+    transition: color 0.5s, border-bottom-width 0.5s;
+    border-bottom: 2px solid transparent;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.csgo-menu-conatiner ul li a:hover {
+    background: linear-gradient(180deg, rgba(253, 67, 42, 0.80) 0%, rgba(253, 42, 169, 0.80) 100%);
+    border-bottom-width: 2px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+.csgo-menu-conatiner ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(180deg, rgba(253, 67, 42, 0.80) 0%, rgba(253, 42, 169, 0.80) 100%);
+    transition: width 0.5s;
+}
+
+.csgo-menu-conatiner ul li a:hover::before {
+    width: 100%;
+}
+
+.csgo-login-btn {
+    display: inline-flex;
+    padding: 12px 30px;
+    justify-content: center;
+    align-items: center;
+    color: #BEBEBE;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    background: linear-gradient(180deg, rgba(253, 67, 42, 0.80) 0%, rgba(253, 42, 169, 0.80) 100%);
+}
+
+.csgo-btn {
+    display: inline-flex;
+    padding: 12px 30px;
+    justify-content: center;
+    align-items: center;
+    color: #BEBEBE;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    background: linear-gradient(180deg, rgba(253, 67, 42, 0.80) 0%, rgba(253, 42, 169, 0.80) 100%);
+}
+
+/* Header End */
+
+/* CSGO Hero Section Start */
+.csgo-heroSection-main-conatiner {
+    position: relative;
+    height: 90vh;
+    margin-left: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-angle-corner-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 40%;
+    z-index: -1000;
+
+}
+
+.csgo-heroSection-text-container {
+    width: 56.5%;
+}
+
+.csgo-heroSection-text-container h1 {
+    font-family: Nippo;
+    font-size: 5.3rem;
+    font-weight: 700;
+    background: linear-gradient(180deg, #B27669 0%, #FAFAFD 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 110px;
+}
+
+.csgo-heroSection-text-container h1 span {
+    background: linear-gradient(180deg, rgba(253, 67, 42, 0.80) 0%, rgba(253, 42, 169, 0.80) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Nippo', sans-serif;
+    font-size: 5.3rem;
+    font-weight: 700;
+}
+
+.csgo-heroSection-text-container p {
+    padding-top: 40px;
+    color: var(--primary-text-clr);
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.csgo-heroSection-img-container {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+}
+
+.csgo-heroSection-img-container img {
+    display: flex;
+    width: 95%;
+}
+
+/* CSGO Hero Section End */
+
+/* HomeBoost Section Start */
+.csgo-HomeBoost-conatianer {
+    width: 100%;
+    height: auto;
+    position: relative;
+    border: 1px solid #000;
+}
+
+.csgo-HomeBoost-conatianer img {
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    object-position: top;
+}
+
+.csgo-HomeBoost-tabs-conatiner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.csgo-boost-tabs {
+    display: flex;
+    width: 80%;
+    text-align: center;
+    padding: 0px 120px 0px 70px;
+}
+
+.svg-shape {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 48px;
+    color: #1A1A2C;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.svg-shape::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(216, 215, 215, 0.795);
+    clip-path: path('M232.326 0H45.6596C39.7021 0 35.7305 2.4 31.7589 7.2L0.7098 44.725C-0.369095 46.0289 0.558296 48 2.2507 48H273.749C275.442 48 276.369 46.0289 275.29 44.725L244.241 7.2C240.27 2.4 238.284 0 232.326 0Z');
+    fill-opacity: 0.8;
+    transition: 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.svg-shape.active {
+    color: var(--primary-white);
+}
+
+.svg-shape.active::before {
+    background: linear-gradient(135deg, #FD432A, #FD2AA9);
+    opacity: 0.95;
+    transition: 0.5s ease-in-out;
+}
+
+@supports (-webkit-filter: none) or (filter: none) {
+    .svg-shape::before {
+        filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.8));
+    }
+}
+
+.csgo-boost-tab {
+    width: 100%;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+}
+
+.csgo-boost-tab span {
+    margin-left: 50px;
+}
+
+.csgo-boost-tab.active {
+    z-index: 2;
+}
+
+.csgo-boost-content {
+    display: flex;
+    width: 80%;
+    height: 70%;
+    border-radius: 16px;
+    border: 1px solid #F0B9A9;
+    background: linear-gradient(180deg, rgba(29, 44, 73, 0.70) 0%, rgba(67, 67, 111, 0.70) 100%);
+    backdrop-filter: blur(25px);
+    overflow: hidden;
+}
+
+.csgo-boost-tab-content {
+    display: none;
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    text-align: left;
+    padding: 2.5em 0em 0em 0em;
+}
+
+.csgo-boost-para {
+    width: 50%;
+}
+
+.csgo-boost-para h2 {
+    font-size: 3.15rem;
+    font-weight: 700;
+    line-height: normal;
+    background: linear-gradient(180deg, rgba(253, 67, 42, 0.80) 0%, rgba(253, 42, 169, 0.80) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.csgo-boost-para h5 {
+    color: var(--primary-white);
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding-top: 10px;
+    padding-bottom: 35px;
+}
+
+.csgo-boost-tab-content img {
+    width: 50%;
+    height: auto;
+    display: none;
+}
+
+.csgo-boost-tab-content.active {
+    display: flex;
+    justify-content: space-between;
+}
+
+.csgo-boost-tab-content.active .csgo-boost-para {
+    display: block;
+    animation: fade-in 1s, slide-in 1s;
+}
+
+.csgo-boost-tab-content.active img {
+    display: block;
+    animation: fade-in 1s, slide-left 1s;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slide-left {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+/* CSGO Hero Section End */
+
+/* CSGO Features Section Start */
+.csgo-HomeFeatures-container {
+    padding: 60px 0px;
+}
+
+.csgo-HomeFeatures-innerSection {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 15px;
+}
+
+.csgo-HomeFeatures-innerSection h3 {
+    color: #EFF3FB;
+    font-size: 2.3rem;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.csgo-HomeFeatures-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    min-width: 260px;
+    min-height: 320px;
+}
+
+.csgo-HomeFeatures-box img {
+    width: 100%;
+    transition: 0.5s ease-in-out;
+
+}
+
+.csgo-HomeFeatures-deatil-container {
+    position: absolute;
+    top: 30px;
+    padding: 0px 20px 0px 25px;
+}
+
+.csgo-HomeFeatures-deatil-container span {
+    display: inline-flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 200px;
+    background: #3F4D75;
+}
+
+.csgo-HomeFeatures-deatil-container span img {}
+
+.csgo-HomeFeatures-deatil-container h4 {
+    color: #EFF3FB;
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: 600;
+    margin: 16px 0px;
+}
+
+.csgo-HomeFeatures-deatil-container p {
+    color: var(--primary-text-clr);
+    font-size: 0.9rem;
+    font-weight: 400;
+    word-spacing: 5px;
+}
+
+/* CSGO Features Section End */
+
+/* csgo-HomeBoosting Services Start */
+.csgo-HomeBoosting-services-container {
+    padding: 10px 0px 60px 0px;
+}
+
+.csgo-HomeBoosting-services-innerSection {
+    width: 90%;
+    margin: auto;
+}
+
+.csgo-HomeBoosting-services-innerSection h1 {
+    text-align: center;
+    font-size: 4.6rem;
+    font-weight: 700;
+    font-family: 'Nippo', sans-serif;
+    line-height: normal;
+    background: linear-gradient(90deg, rgba(253, 67, 42, 0.80) 0%, rgba(253, 42, 169, 0.80) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.csgo-HomeBoosting-services-line-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+.csgo-HomeBoosting-services-line {
+    position: relative;
+    width: 40px;
+    height: 714px;
+    margin: 0px 30px 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    background: var(--gradient, linear-gradient(180deg, #B27669 0%, #FAFAFD 100%));
+}
+
+.csgo-HomeBoosting-services-line-span {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    margin-top: 60px;
+    margin-left: .3px;
+    border-radius: 50px;
+    background: linear-gradient(180deg, rgba(253, 67, 42, 0.80) 0%, rgba(253, 42, 169, 0.80) 100%);
+}
+
+.csgo-HomeBoosting-services-line-span:nth-child(2) {
+    margin-top: 340px;
+}
+
+.csgo-HomeBoosting-services-line-span:nth-child(3) {
+    margin-top: 620px;
+}
+
+.csgo-HomeBoosting-services-section-conatiner-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.csgo-HomeBoosting-services-section {}
+
+.csgo-HomeBoosting-services-section:nth-child(3) {
+    display: flex;
+    align-items: center;
+}
+
+.csgo-HomeBoosting-services-box {
+    display: inline-flex;
+    padding: 1em 1.6em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 16px;
+    background: #282834;
+}
+
+.csgo-HomeBoosting-services-box h3 {
+    color: #EFF3FB;
+    font-size: 2.1rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.csgo-HomeBoosting-services-box p {
+    color: var(--primary-text-clr);
+    font-family: Poppins;
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 10px;
+}
+
+/* csgo-HomeBoosting Services End */
+
+/* csgo-HomeWhyChoose Services Start */
+.csgo-HomeWhyChoose-services-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.HomeWhyChoose-img {
+    width: 100%;
+    height: 100vh;
+}
+
+.csgo-HomeWhyChoose-services-img-section {
+    position: absolute;
+    top: 10px;
+}
+
+.csgo-HomeWhyChoose-services-img-section img {
+    width: 90%;
+    height: 90vh;
+
+}
+
+
+.csgo-HomeWhyChoose-services-detail-section {
+    position: absolute;
+    right: 70px;
+    width: 50%;
+}
+
+.csgo-HomeWhyChoose-services-detail-section h3 {
+    color: #EFF3FB;
+    font-family: Poppins;
+    font-size: 2.2rem;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.csgo-HomeWhyChoose-services-detail-section p {
+    color: var(--primary-text-clr);
+    font-family: Poppins;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 15px;
+}
+
+
+.csgo-HomeWhyChoose-happyCustomers-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    margin-top: 40px;
+}
+
+.csgo-HomeWhyChoose-happyCustomers-box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.csgo-HomeWhyChoose-happyCustomers-box img {
+    width: 100%;
+}
+
+.csgo-HomeWhyChoose-happyCustomers-txt-box {
+    position: absolute;
+    text-align: center;
+}
+
+.csgo-HomeWhyChoose-happyCustomers-txt-box h5 {
+    color: #EFF3FB;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.csgo-HomeWhyChoose-happyCustomers-txt-box h6 {
+    color: var(--primary-text-clr);
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* csgo-HomeWhyChoose Services End */
+
+/* csgo-HomeReviews Services Start */
+.csgo-HomeReview-container {
+    padding: 30px 25px;
+}
+
+.csgo-HomeReview-container h3 {
+    color: #EFF3FB;
+    font-family: Poppins;
+    font-size: 2.2rem;
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+}
+
+.csgo-HomeReview-container p {
+    color: var(--primary-text-clr);
+    font-family: Poppins;
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+.csgo-HomeReview-carousel-container {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    margin-top: 40px;
+    padding-bottom: 100px;
+}
+
+.csgo-HomeReview-carousel {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.csgo-HomeReview-cards {
+    display: flex;
+}
+
+.csgo-HomeReview-card {
+    position: relative;
+    flex: 0 0 190px;
+    border-radius: 5px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.csgo-HomeReview-card img {
+    height: 335px;
+}
+
+.csgo-HomeReview-arrow-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 135px;
+}
+
+.csgo-HomeReview-left-arrow,
+.csgo-HomeReview-right-arrow {
+    display: flex;
+    width: 55px;
+    height: 55px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.10);
+    border: 1px solid var(--primary-text-clr);
+}
+
+.csgo-HomeReview-left-arrow:hover,
+.csgo-HomeReview-right-arrow:hover {
+    background: #555;
+}
+
+.csgo-HomeReview-person-detail {
+    position: absolute;
+    left: 30px;
+    width: 230px;
+    margin-top: 20px;
+}
+
+.csgo-HomeReview-person-detail p {
+    color: #1A1A2C;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: normal;
+    text-align: left;
+}
+
+.csgo-HomeReview-person-span {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.csgo-HomeReview-person-span span {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.csgo-HomeReview-person-span span img {
+    display: flex;
+    width: 50px;
+    height: 50px;
+}
+
+.csgo-HomeReview-person-span h6 {
+    color: #282834;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+/* csgo-HomeReviews Services End */
+
+
+
+
+
+
+/* csgo-Home-FAQS Start */
+.accordion {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding-bottom: 5.1rem;
+}
+
+.accordion h1 {
+    color: #EFF3FB;
+    font-size: 2.2rem;
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.accordion-item {
+    color: #111;
+    margin: 0rem 0;
+    border-top: 1px solid #282834;
+}
+
+.accordion-item:nth-child(4) {
+    border-bottom: 1px solid #282834;
+}
+
+.accordion-item-header {
+    padding: 2rem 3rem 2rem 0rem;
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    font-size: 22px;
+    color: #EFF3FB;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.accordion-item-header::after {
+    content: "\002B";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+}
+
+.accordion-item-header.active::after {
+    content: "\2212";
+}
+
+.accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion-item-body-content {
+    color: #EFF3FB;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 1rem 0rem;
+}
+
+/* csgo-Home-FAQS End */
+
+/* csgo-Home-Subscribe Start */
+.csgo-HomeSubscribe-container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: #131320;
+    overflow: hidden;
+    padding-bottom: 8rem;
+}
+
+.trns-text {
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 1px #e20a64;
+    display: block;
+    text-align: center;
+    letter-spacing: -25px;
+    background-size: cover;
+    font-family: Nippo;
+    font-size: 200px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+
+.csgo-h1-Subscribe {
+    position: absolute;
+    top: -88px;
+}
+
+.csgo-h1-Subscribe h6 {
+    color: #EFF3FB;
+    font-size: 3.2rem;
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: -5px 0px 0 #e20a64;
+    margin-top: -95px;
+}
+
+.csgo-h1-Subscribe p {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+.csgo-subscribe-email-container {
+    display: flex;
+    margin-top: 300px;
+}
+
+.csgo-subscribe-email-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.csgo-subscribe-email-section svg {}
+
+.csgo-subscribe-email-section input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    color: #BEBEBE;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.SUBSCRIBE-btn {
+    margin-left: 20px;
+}
+
+/* csgo-Home-Subscribe End */
+
+/* csgo-Home-Footer Start */
+.csgo-HomeFooter-container {
+    padding: 3rem 0rem;
+    background-color: #1e2741;
+}
+
+.footer-logo {
+    display: block;
+    margin: 0 auto;
+}
+
+.csgo-Home-InnerFooter-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 100px;
+    width: 68%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.csgo-Home-InnerFooter-section {}
+
+.csgo-Home-InnerFooter-section h5 {
+    color: #EFF3FB;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.footer-line-span {
+    width: 150px;
+    height: 2px;
+    margin: 25px 0px;
+    background: linear-gradient(180deg, rgba(253, 67, 42, 0.80) 0%, rgba(253, 42, 169, 0.80) 100%);
+}
+
+.csgo-footer-list-container {
+    margin-top: 40px;
+}
+
+.csgo-footer-list-container li {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 200;
+    margin-top: 15px;
+}
+
+.csgo-footer-list-container li a {
+    display: flex;
+}
+
+.csgo-footer-list-container li a img {
+    width: 22px;
+    height: 22px;
+    margin-right: 5px;
+}
+
+.lowerfooter {
+    width: 100%;
+    background: #131320;
+    text-align: center;
+    padding: 1rem 0rem;
+}
+
+.lowerfooter h6 {
+    color: #EFF3FB;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.lowerfooter p {
+    color: #BEBEBE;
+    font-size: 10.667px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+/* csgo-Home-Footer End */
+
+/************ ABOUT US PAGE CSS START ************/
+.csgo-aboutUs-hero-container {
+    padding: 4.5rem 0rem;
+    background: linear-gradient(180deg, rgba(29, 44, 73, 0.70) 0%, rgba(67, 67, 111, 0.70) 100%);
+    backdrop-filter: blur(25px);
+}
+
+.csgo-aboutUs-hero-section {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.csgo-aboutUs-hero-section h2 {
+    color: #EFF3FB;
+    font-size: 2.2rem;
+    font-style: italic;
+    font-weight: 700;
+    padding-bottom: 25px;
+}
+
+.csgo-aboutUs-hero-section h5 {
+    color: var(--primary-text-clr);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.csgo-aboutUs-offer-container {
+    background-image: url("../../assets/img/aboutUs.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 3rem 0rem;
+}
+
+.csgo-aboutUs-offer-container h2 {
+    text-align: center;
+    padding-bottom: 2rem;
+    color: #EFF3FB;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.csgo-aboutUs-Offer-section {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 20px;
+}
+
+.csgo-aboutUs-Offer-box {
+    position: relative;
+    width: auto;
+}
+
+.csgo-aboutUs-Offer-box img {
+    width: 100%;
+}
+
+.csgo-aboutUs-Offer-text-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem 2rem 0rem 2rem;
+}
+
+.csgo-aboutUs-Offer-box h6 {
+    font-size: 24px;
+    font-weight: 700;
+    font-style: italic;
+    background: linear-gradient(180deg, rgba(253, 67, 42, 0.80) 0%, rgba(253, 42, 169, 0.80) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.csgo-aboutUs-Offer-box p {
+    color: #1A1A2C;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+/************ ABOUT US PAGE CSS END ************/
+
+
+/************ PAYMENT US PAGE CSS START ************/
+.csgo-payment-container {
+    padding: 3.5rem 0rem;
+}
+
+.csgo-payment-container h1 {
+    text-align: center;
+    padding-bottom: 25px;
+    color: #EFF3FB;
+    font-size: 2.2rem;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.csgo-payment-section {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.csgo-contactus-section {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.csgo-contactus-btn {
+    width: 100%;
+}
+
+
+.csgo-payment-inner-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
+    margin-bottom: 40px;
+}
+.csgo-contactus-box{
+    /* border: 1px solid red; */
+    width: 50%;
+}
+.csgo-contactus-inner-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    margin-bottom: 20px;
+
+}
+
+.csgo-payment-inner-box svg {}
+
+.csgo-payment-inner-box input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: center;
+    background-color: transparent;
+    color: var(--primary-text-clr);
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.csgo-contactus-inner-box .contectus-input {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: transparent;
+    color: #111; 
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 700;
+    padding: 20px 30px;
+    /* border: 1px solid red; */
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background: rgba(216, 215, 215, 0.795);
+}
+.account-data-input{
+    font-size: 19px !important;
+    font-weight: 700;
+}
+.account-data-input:focus{
+    text-align: center;
+    outline: none;
+}
+.csgo-contactus-inner-box .contectus-input::placeholder {
+    color: #131320; 
+}
+
+
+
+.csgo-payment-inner-box input:focus {
+    outline: none;
+}
+
+
+.csgo-payment-box-2 {
+    width: 490px;
+    padding: 32px 32px 0px 32px;
+    align-items: flex-start;
+    border-radius: 16px;
+    background: var(--tab-container, linear-gradient(180deg, rgba(29, 44, 73, 0.70) 0%, rgba(67, 67, 111, 0.70) 100%));
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.csgo-payment-box-2 h3 {
+    color: #BEBEBE;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.csgo-payment-box-2 h3 span {
+    color: #EFF3FB;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.csgo-payment-box-2 p {
+    color: #BEBEBE;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.csgo-paymen-method-container {
+    padding-top: 30px;
+}
+
+.csgo-paymen-method-container h5 {
+    color: #EFF3FB;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+
+.csgo-payment-rate-conatiner {
+    padding-top: 30px;
+}
+
+.csgo-payment-rate-conatiner ul {}
+
+.csgo-payment-rate-conatiner ul li {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.csgo-payment-rate-conatiner ul li p {
+    color: #BEBEBE;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.csgo-payment-rate-conatiner ul li span {
+    color: #BEBEBE;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.csgo-payment-box-2 hr {
+    margin: 1rem 0rem;
+}
+
+.csgo-paymen-method-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.csgo-paymen-method-container label input[type=radio] {
+    --s: 1.8em;
+    --c: rgba(253, 42, 169, 0.80);
+    height: var(--s);
+    aspect-ratio: 1;
+    border: calc(var(--s)/8) solid #939393;
+    padding: calc(var(--s)/8);
+    background:
+        radial-gradient(farthest-side, var(--c) 94%, #0000) 100%/0 0 no-repeat content-box;
+    outline-offset: calc(var(--s)/10);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    font-size: inherit;
+    transition: .3s;
+}
+
+.csgo-paymen-method-container label input[type=radio]:checked {
+    border-color: var(--c);
+    background-size: 100% 100%;
+}
+
+.csgo-paymen-method-container label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+
+    background: var(--inactive-tab, linear-gradient(180deg, rgba(226, 226, 226, 0.70) 0%, rgba(211, 211, 213, 0.70) 99.99%, rgba(243, 243, 243, 0.70) 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.csgo-total-payment-conatiner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.csgo-total-payment-conatiner h5 {
+    color: #EFF3FB;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.csgo-total-payment-conatiner h6 {
+    color: #EFF3FB;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.csgo-payment-checkout {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    margin-top: 40px;
+    padding: 16px 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    background: linear-gradient(180deg, rgba(253, 67, 42, 0.80) 0%, rgba(253, 42, 169, 0.80) 100%);
+    border: none;
+    color: #EFF3FB;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/************ PAYMENT US PAGE CSS END ************/
+
+/************ BOOST PAGE CSS Start ************/
+.csgo-boost-container {
+    position: relative;
+}
+
+.csgo-boost-container img {
+    width: 100%;
+}
+
+.csgo-boost-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boost-hero-text-container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trns-boost-text {
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 3px #e20a64;
+    display: block;
+    text-align: center;
+    background-size: cover;
+    font-family: Nippo;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+
+.appear-from-bottom {
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    animation: appearAnimation 1s forwards;
+}
+
+@keyframes appearAnimation {
+    to {
+        opacity: 1;
+        bottom: 50%;
+    }
+}
+
+/* csgo-boost-howtobuy-css-start */
+.csgo-boost-howtobuy-container {
+    padding: 60px 0px 80px 0px;
+
+}
+
+.csgo-boost-howtobuy-container h3 {
+    color: #EFF3FB;
+    text-align: center;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 700;
+    padding-bottom: 60px;
+}
+
+.csgo-boost-howtobuy-section {
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.csgo-boost-howtobuy-inner-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 80px;
+    grid-row-gap: 60px;
+    width: 50%;
+    margin: auto;
+
+}
+
+.round-vector {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+
+
+
+
+
+
+.csgo-howtobuy-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.csgo-howtobuy-box img {
+    width: 100%;
+    transition: 0.5s ease-in-out;
+
+}
+
+.csgo-howtobuy-deatil-container {
+    position: absolute;
+    top: 30px;
+    padding: 0px 20px 0px 25px;
+}
+
+.csgo-howtobuy-deatil-container span {
+    display: inline-flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 200px;
+    background: #3F4D75;
+}
+
+.csgo-howtobuy-deatil-container span img {}
+
+.csgo-howtobuy-deatil-container h4 {
+    color: #EFF3FB;
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: 600;
+    margin: 16px 0px;
+}
+
+.csgo-howtobuy-deatil-container p {
+    color: var(--primary-text-clr);
+    font-size: 0.9rem;
+    font-weight: 400;
+    word-spacing: 5px;
+}
+
+/* csgo-boost-howtobuy-css-end */
+
+
+/* HomeBoost Section Start */
+.csgo-howtobuy-conatianer {
+    width: 90%;
+    height: 120vh;
+    padding-top: 30px;
+    position: relative;
+    margin: auto;
+}
+
+.csgo-howtobuy-conatianer img {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: top;
+
+}
+
+.tabs-vector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.csgo-howtobuy-tabs-conatiner {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+
+
+.csgo-boost-howtobuy-tabs {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+    text-align: center;
+}
+
+.csgo-boost-faceit-tabs {
+    width: 62%;
+}
+
+.csgo-boost-coaching-tabs {
+    width: 88%;
+}
+
+.csgo-boostmain-tabs {
+    width: 94%;
+}
+
+.svg-shape-howtobuy {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 48px;
+    color: #1A1A2C;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.svg-shape-howtobuy::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 275px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(216, 215, 215, 0.562);
+    clip-path: path('M232.326 0H45.6596C39.7021 0 35.7305 2.4 31.7589 7.2L0.7098 44.725C-0.369095 46.0289 0.558296 48 2.2507 48H273.749C275.442 48 276.369 46.0289 275.29 44.725L244.241 7.2C240.27 2.4 238.284 0 232.326 0Z');
+    fill-opacity: 0.8;
+    transition: 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.svg-shape-howtobuy.active {
+    color: var(--primary-white);
+}
+
+.svg-shape-howtobuy.active::before {
+    background: linear-gradient(135deg, #FD432A, #FD2AA9);
+    opacity: 0.95;
+    transition: 0.5s ease-in-out;
+}
+
+@supports (-webkit-filter: none) or (filter: none) {
+    .svg-shape-howtobuy::before {
+        filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.8));
+    }
+}
+
+.csgo-boost-howtobuy-tab {
+    width: 100%;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.csgo-boost-howtobuy-tab:nth-child(1) {
+    margin-right: -40px;
+
+}
+
+.csgo-boost-howtobuy-tab:nth-child(2) {
+    margin-left: -40px;
+}
+
+.csgo-boost-faceit-tab:nth-child(1) {
+    margin-right: -40px;
+
+}
+
+.csgo-boost-faceit-tab:nth-child(2) {
+    margin-left: 0px;
+}
+
+.csgo-boost-faceit-tab:nth-child(3) {
+    margin-left: -40px;
+}
+
+.csgo-boost-faceit-tab:nth-child(4) {
+    margin-left: -40px;
+}
+
+.csgo-boost-faceit-tab:nth-child(5) {
+    margin-left: -40px;
+}
+
+.csgo-boostmain-tab span {
+    font-size: 0.8rem !important;
+}
+
+
+
+.csgo-boost-howtobuy-tab span {
+    font-size: 0.75rem;
+    font-weight: 700;
+    position: absolute;
+}
+
+.csgo-boost-howtobuy-tab.active {
+    z-index: 2;
+}
+
+.csgo-boost-howtobuy-tab svg {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+
+.csgo-boost-howtobuy-content {
+    width: 80%;
+    height: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.csgo-boost-howtobuy-tab-content {
+    display: none;
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    text-align: left;
+    padding: 2.5em 0em 0em 0em;
+}
+
+.csgo-boost-howtobuy-para {
+    width: 100%;
+}
+
+.csgo-boost-howtobuy-para h2 {
+    font-size: 3.15rem;
+    font-weight: 700;
+    line-height: normal;
+    background: linear-gradient(180deg, rgba(253, 67, 42, 0.80) 0%, rgba(253, 42, 169, 0.80) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.csgo-boost-howtobuy-para h5 {
+    color: var(--primary-white);
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding-top: 10px;
+    padding-bottom: 35px;
+}
+
+.csgo-boost-howtobuy-tab-content img {
+    width: 50%;
+    height: auto;
+    display: none;
+}
+
+.csgo-boost-howtobuy-tab-content.active {
+    display: flex;
+    justify-content: space-between;
+}
+
+.csgo-boost-howtobuy-tab-content.active .csgo-boost-howtobuy-para {
+    display: block;
+    animation: fade-in 1s, slide-in 1s;
+}
+
+.csgo-boost-howtobuy-tab-content.active img {
+    display: block;
+    animation: fade-in 1s, slide-left 1s;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slide-left {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+
+.csgo-boost-rank-title-conatiner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.csgo-boost-rank-title-conatiner h3 {
+    color: #EFF3FB;
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.csgo-boost-rank-select-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rank-arrow-container {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: end !important;
+
+}
+
+.rank-arrow {
+    height: 110px !important;
+    margin-top: -10px;
+}
+
+.csgo-boost-rank-title-box {
+    height: 110px;
+}
+
+
+.csgo-boost-rank-select-container .rank-img {
+    width: 140px;
+    height: 56px;
+}
+
+
+.addLocationProduct-boost-rank-dropdown {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    height: 57px;
+    border-radius: 8px;
+    margin-left: 10px;
+    border: 1px solid var(--primary-text-clr);
+    transition: 0.5s ease-in-out;
+}
+
+.addLocationProduct-boost-rank-dropdown:hover {
+    border-radius: 8px;
+    background: #43436F;
+}
+
+.addLocationProduct-boost-rank-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 15px 5px 15px;
+    width: 100%;
+    height: 100%;
+    color: #EFF3FB;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.addLocationProduct-boost-rank-toggle img {
+    margin-right: 10px;
+}
+
+.addLocationProduct-boost-rank-arrow {
+    position: absolute;
+    right: 20px;
+    display: inline-block;
+    width: 0.4em;
+    height: 0.4em;
+    border-right: 1px solid #EFF3FB;
+    border-bottom: 1px solid #EFF3FB;
+    transform: rotate(45deg);
+    margin-left: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.addLocationProduct-boost-rank-toggle.open .addLocationProduct-boost-rank-arrow {
+    transform: rotate(-135deg);
+}
+
+.addLocationProduct-boost-rank-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 250px;
+    overflow-y: scroll;
+    color: var(--primary-text-clr);
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    max-height: 0;
+    cursor: pointer;
+    border-top: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    background: var(--primary, #1A1A2C);
+    z-index: 1;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.addLocationProduct-boost-rank-toggle.open+.addLocationProduct-boost-rank-dropdown-menu {
+    max-height: 230px;
+    overflow-y: scroll;
+    border: 2px solid #43436F;
+    overflow-y: none;
+}
+
+.addLocationProduct-boost-rank-dropdown-menu::-webkit-scrollbar {
+    display: none;
+}
+
+.addLocationProduct-boost-rank-option {
+    display: block;
+    padding: 10px;
+    color: var(--primary-text-clr);
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.addLocationProduct-boost-rank-option:hover {
+    background-color: #282834;
+}
+
+
+
+
+
+.csgo-boost-rank-boost-category-conatiner {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0rem;
+    width: 90%;
+    margin: auto;
+}
+
+
+.csgo-boost-rank-boost-category-section p {
+    font-size: 12px;
+    font-weight: 500;
+    background: linear-gradient(180deg, rgba(253, 67, 42, 0.80) 0%, rgba(253, 42, 169, 0.80) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.csgo-boost-rank-boost-category-box {
+    display: flex;
+    height: 40px;
+}
+
+.csgo-boost-rank-boost-category-box h5 {
+    color: #BEBEBE;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.csgo-boost-rank-boost-category-box img {
+    width: 24px;
+    height: 24px;
+    margin: 10px 0px 0px 5px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 1.4em;
+    margin: 10px 0px 0px 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    display: flex;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #A4A6B0;
+    transition: .5s;
+    border-radius: 0px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1em;
+    width: 1.2em;
+    border-radius: 0px;
+    left: 0.3em;
+    bottom: 0.2em;
+    background-color: rgb(0, 0, 0);
+    background-image: linear-gradient(180deg, rgba(253, 67, 42, 0.80) 0%, rgba(253, 42, 169, 0.80) 100%);
+    transition: .5s;
+}
+
+.switch input:checked+.slider {
+    background-image: linear-gradient(180deg, rgba(253, 67, 42, 0.80) 0%, rgba(253, 42, 169, 0.80) 100%);
+
+}
+
+
+
+.switch input:checked+.slider:before {
+    transform: translateX(1.5em);
+}
+
+
+
+.csgo-boost-totalAmount-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.csgo-boost-totalAmount-section {
+    position: absolute;
+    top: 0;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+.csgo-boost-totalAmount-section label h3 {
+    color: var(--primary-text-clr);
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.csgo-boost-totalAmount-section label h4 {
+    color: #EFF3FB;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.csgo-boost-whychooseus-main-section {
+    width: 100%;
+    position: absolute;
+    margin-top: 50px;
+}
+
+.csgo-boost-whychooseus-main-section h3 {
+    color: #EFF3FB;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 80px;
+    padding-bottom: 10px;
+}
+
+.csgo-boost-whychooseus-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0em 2em;
+}
+
+.csgo-boost-whychooseus-box {
+    display: flex;
+    justify-content: center;
+}
+
+.csgo-boost-whychooseus-section span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: #3F4D75;
+}
+
+.csgo-boost-whychooseus-section span img {
+    width: 24px;
+    height: 24px;
+}
+
+.csgo-boost-whychooseus-box h5 {
+    margin: 2px 0px 0px 10px;
+}
+
+.range-number-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.range-number-container span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -6px;
+}
+
+.range-number-container span h5 {
+    color: #BEBEBE;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.range-number-container span h6 {
+    color: #BEBEBE;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.range-slider {
+    position: relative;
+    width: 300px;
+    margin: 20px auto;
+}
+
+.slider-range {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background: #f1f1f1;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.slider-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, rgba(253, 67, 42, 0.80) 0%, rgba(253, 42, 169, 0.80) 100%);
+    cursor: pointer;
+}
+
+.slider-range::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(180deg, rgba(253, 67, 42, 0.80) 0%, rgba(253, 42, 169, 0.80) 100%);
+    cursor: pointer;
+}
+
+.slider-value {
+    display: flex;
+    height: 2px;
+    margin-top: -10px;
+}
+
+/* CSGO Hero Section End */
+
+/************ BOOST PAGE CSS END ************/
+
+/************ Coachsing PAGE CSS START ************/
+.coaching-span-tab {
+    margin-left: 30px !important;
+    font-size: 1.1rem !important;
+    font-weight: 500 !important;
+}
+
+.csgo-boost-coaching-rank-title-conatiner {
+    width: 70%;
+    margin: auto;
+    padding-top: 0px !important;
+    margin-top: -30px;
+
+}
+
+.csgo-coaching-waiting-txt-section {
+    display: flex;
+    margin-left: 20px;
+    height: 30px;
+}
+
+.csgo-coaching-waiting-txt-section h5 {
+    display: flex;
+}
+
+.csgo-coaching-waiting-txt-section img {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    margin-top: 7px;
+}
+
+.csgo-boost-coaching-rank-boost-category-conatiner {
+    width: 50%;
+    padding: 0rem 0rem;
+    height: 70px !important;
+}
+
+.csgo-boost-coaching-howtobuy-content {}
+
+.csgo-boost-coaching-p {
+    color: var(--primary-text-clr);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.csgo-boost-coaching-rank-boost-category-section p {
+    text-align: left;
+    margin-top: -5px;
+}
+
+
+/************ Coachsing PAGE CSS END ************/
+
+
+
+/************ Face IT PAGE CSS START ************/
+.csgo-boost-faceit-howtobuy-tab span {
+    margin-left: 30px !important;
+    font-size: 1.1rem !important;
+    font-weight: 500 !important;
+}
+
+.csgo-boost-faceit-howtobuy-tab::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 40px !important;
+    width: 275px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(216, 215, 215, 0.562);
+    clip-path: path('M232.326 0H45.6596C39.7021 0 35.7305 2.4 31.7589 7.2L0.7098 44.725C-0.369095 46.0289 0.558296 48 2.2507 48H273.749C275.442 48 276.369 46.0289 275.29 44.725L244.241 7.2C240.27 2.4 238.284 0 232.326 0Z');
+    fill-opacity: 0.8;
+    transition: 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.csgo-boost-faceit-rank-select-container .rank-img {
+    width: 56px;
+    height: 56px;
+}
+
+/************ Face IT PAGE CSS END ************/
+
+/************ Esportal PAGE CSS START ************/
+.csgo-boost-Esportal-howtobuy-tab span {
+    font-size: 1.1rem !important;
+    font-weight: 500 !important;
+}
+
+.Esportal-tab-span-1 {
+    font-size: 1.3rem !important;
+    margin-top: -12px;
+    font-weight: 300 !important;
+    color: #EFF3FB !important;
+}
+
+.Esportal-tab-span {
+    font-size: 1.3rem !important;
+    margin-top: -12px;
+    font-weight: 300 !important;
+    color: #EFF3FB !important;
+
+}
+
+.csgo-boost-Esportal-howtobuy-tab:nth-child(1):before {
+    left: 220px !important;
+}
+
+.csgo-boost-Esportal-howtobuy-tab:nth-child(2):before {
+    margin-left: 35px !important;
+
+}
+
+.csgo-boost-Esportal-howtobuy-tab::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 275px;
+    height: 100%;
+    background: rgba(216, 215, 215, 0.562);
+    clip-path: path('M232.326 0H45.6596C39.7021 0 35.7305 2.4 31.7589 7.2L0.7098 44.725C-0.369095 46.0289 0.558296 48 2.2507 48H273.749C275.442 48 276.369 46.0289 275.29 44.725L244.241 7.2C240.27 2.4 238.284 0 232.326 0Z');
+    fill-opacity: 0.8;
+    transition: 0.5s ease-in-out;
+    z-index: -1;
+}
+
+/************ Esportal PAGE CSS START ************/
+
+/************ TOS PAGE CSS START ************/
+.csgo-tos-hero-container {
+    padding: 4.5rem 0rem;
+    background: linear-gradient(180deg, rgba(29, 44, 73, 0.70) 0%, rgba(67, 67, 111, 0.70) 100%);
+    backdrop-filter: blur(25px);
+}
+
+.csgo-tos-hero-section {
+    width: 90%;
+    margin: auto;
+}
+
+.csgo-tos-hero-section h1 {
+    color: #EFF3FB;
+    font-size: 2.2rem;
+    font-style: italic;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+.csgo-tos-hero-section h5 {
+    color: var(--primary-text-clr);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.csgo-tos-hero-section h2 {
+    color: #EFF3FB;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 700;
+    padding-bottom: 15px;
+    padding-top: 35px;
+}
+
+.csgo-tos-hero-section p {
+    color: var(--primary-text-clr);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+}
+
+/************ TOS PAGE CSS END ************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************ RESPONSIVE CSS START ************/
+.sidebar-header {
+    display: none;
+    margin-top: 10px;
+}
+
+.burger-line {
+    width: 50px;
+    height: 5px;
+    background: linear-gradient(180deg, rgba(253, 67, 42, 0.80) 0%, rgba(253, 42, 169, 0.80) 100%);
+    margin-bottom: 10px;
+}
+
+.responsive-login-btn {
+    display: none;
+}
+
+@media only screen and (max-width: 1336px) {
+    .csgo-boost-howtobuy-content {
+        width: 95%;
+    }
+
+    .csgo-boost-howtobuy-tab-content {
+        width: 100%;
+    }
+
+    .csgo-boost-howtobuy-para {}
+
+    .csgo-boost-rank-title-conatiner {
+        width: 100%;
+    }
+
+    .csgo-boost-howtobuy-tabs {
+        margin-top: 20px;
+
+    }
+}
+
+@media only screen and (max-width: 1286px) {
+    .csgo-boost-howtobuy-inner-section {
+        width: 70%;
+    }
+
+    .csgo-howtobuy-deatil-container h4 {
+        font-size: 1.5rem;
+    }
+
+    .csgo-howtobuy-deatil-container p {
+        font-size: 1.3rem;
+    }
+}
+
+
+@media only screen and (max-width: 1220px) {
+
+    .csgo-HomeFeatures-box {
+        width: 450px;
+    }
+
+    .csgo-HomeFeatures-innerSection {
+        width: 95%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 25px;
+    }
+
+    .csgo-HomeFeatures-deatil-container span {
+        padding: 1.8em;
+        border-radius: 200px;
+    }
+
+    .csgo-HomeFeatures-deatil-container span img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .csgo-HomeFeatures-deatil-container h4 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin: 16px 0px;
+    }
+
+    .csgo-HomeFeatures-deatil-container p {
+        color: var(--primary-text-clr);
+        font-size: 1.6rem;
+        font-weight: 400;
+        word-spacing: 5px;
+    }
+
+
+    .svg-shape-howtobuy {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 48px;
+        color: #1A1A2C;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+    }
+
+    .svg-shape-howtobuy::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 275px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(216, 215, 215, 0.562);
+        clip-path: path('M232.326 0H45.6596C39.7021 0 35.7305 2.4 31.7589 7.2L0.7098 44.725C-0.369095 46.0289 0.558296 48 2.2507 48H273.749C275.442 48 276.369 46.0289 275.29 44.725L244.241 7.2C240.27 2.4 238.284 0 232.326 0Z');
+        fill-opacity: 0.8;
+        transition: 0.5s ease-in-out;
+        z-index: -1;
+    }
+
+    .csgo-boost-howtobuy-tab span {
+        font-size: 0.75rem;
+        font-weight: 700;
+    }
+}
+
+
+
+@media only screen and (max-width: 1160px) {
+
+    .csgo-heroSection-text-container h1 {
+        font-size: 4rem;
+        line-height: 70px;
+    }
+
+    .csgo-heroSection-text-container h1 span {
+        font-size: 4rem;
+    }
+
+
+    .csgo-heroSection-img-container {
+        right: 0px;
+    }
+
+    .csgo-boost-content {
+        width: 90%;
+        height: 70%;
+        border-radius: 16px;
+        border: 1px solid #F0B9A9;
+        background: linear-gradient(180deg, rgba(29, 44, 73, 0.70) 0%, rgba(67, 67, 111, 0.70) 100%);
+        backdrop-filter: blur(25px);
+        overflow: hidden;
+    }
+
+    .csgo-boost-tab-content {
+        width: 100%;
+        height: 100%;
+        padding: 4em 1em 0em 1em;
+
+    }
+
+    .csgo-boost-tabs {
+        width: 100%;
+    }
+
+    .csgo-HomeWhyChoose-services-img-section {
+        top: 35px;
+    }
+
+    .csgo-HomeWhyChoose-services-img-section img {
+        max-width: 100%;
+        height: 88vh;
+    }
+
+    .csgo-HomeWhyChoose-services-detail-section {
+        width: 85%;
+    }
+
+    .trns-text {
+        letter-spacing: -20px;
+        font-size: 200px;
+    }
+
+    .csgo-aboutUs-Offer-section {
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 15px;
+    }
+
+    .csgo-aboutUs-Offer-box img {
+        width: 100%;
+    }
+
+    .csgo-aboutUs-Offer-box p {
+        font-size: 1.3rem;
+        text-align: left;
+    }
+
+    .csgo-payment-inner-box {
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+
+}
+
+
+@media only screen and (max-width: 1090px) {
+    .csgo-boost-howtobuy-inner-section {
+        width: 80%;
+    }
+
+    .csgo-howtobuy-deatil-container h4 {
+        font-size: 1.5rem;
+    }
+
+    .csgo-howtobuy-deatil-container p {
+        font-size: 1.3rem;
+    }
+
+    .csgo-boost-howtobuy-content {
+        width: 95%;
+    }
+
+    .csgo-boost-howtobuy-tab-content {
+        width: 100%;
+    }
+
+
+    .csgo-boost-rank-title-conatiner {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .csgo-boost-howtobuy-content {
+        padding-top: 30px;
+        width: 95%;
+    }
+
+    .tabs-vector {
+        height: 100% !important;
+    }
+
+    .csgo-boost-howtobuy-tabs {
+        margin-top: 40px;
+    }
+
+    .csgo-boost-howtobuy-tabs {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .csgo-HomeFeatures-box {
+        width: 100%;
+    }
+
+    .csgo-HomeFeatures-box img {
+        height: 500px;
+    }
+
+    .csgo-HomeFeatures-innerSection {
+        width: 95%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 25px;
+    }
+
+    .csgo-HomeFeatures-deatil-container {
+        padding: 70px 50px 0px 50px;
+
+    }
+
+    .csgo-boost-rank-boost-category-conatiner {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .csgo-boost-rank-boost-category-box {
+        justify-content: space-between;
+    }
+
+    .csgo-boost-rank-boost-category-box img {
+        position: absolute;
+        right: 90px;
+    }
+
+    .tabs-vector {
+        height: 100% !important;
+    }
+
+    .csgo-howtobuy-conatianer {
+        height: 140vh;
+    }
+
+    .csgo-boost-totalAmount-container svg {
+        height: 100%;
+    }
+
+    .csgo-boost-totalAmount-container-coaching {
+        margin-top: 60px;
+    }
+
+    .csgo-howtobuy-conatianer .tabs-vector-coaching {
+        height: 120vh !important;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .sidebar-header {
+        display: block;
+    }
+
+    .responsive-login-btn {
+        display: block !important;
+        margin: 0rem 1rem 1rem 1rem;
+    }
+
+    .csgo-menu-conatiner {
+        height: 0;
+        overflow: hidden;
+        background-color: #f0f0f0;
+        transition: height 0.3s ease;
+    }
+
+    .csgo-menu-conatiner.expanded {
+        height: 478px;
+        border-radius: 10px;
+    }
+
+    .csgo-login-btn {
+        display: none;
+    }
+
+    .csgo-menu-conatiner {
+        position: absolute;
+        top: 220px;
+        background: linear-gradient(180deg, rgb(29, 44, 73) 0%, rgb(67, 67, 111) 100%);
+        box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
+        width: 85.4%;
+        z-index: 99999;
+    }
+
+    .csgo-menu-conatiner ul {
+        display: block;
+    }
+
+    .csgo-menu-conatiner ul li {
+        padding: 1.2rem;
+        margin-right: 0px;
+        text-align: left;
+    }
+
+    .csgo-menu-conatiner ul li a {
+        font-size: 1.2rem !important;
+    }
+
+    .csgo-boost-tabs {
+        width: 90%;
+        padding: 0px 0px 0px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .svg-shape {
+        position: relative;
+        text-align: center;
+        height: 48px;
+        color: #1A1A2C;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+        background: rgba(216, 215, 215, 0.795);
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .svg-shape::before {
+        content: none;
+        position: none;
+        top: 0;
+        background: rgba(216, 215, 215, 0.795);
+        transition: 0.5s ease-in-out;
+    }
+
+    .csgo-boost-tab span {
+        margin-left: 0px;
+        font-weight: 500;
+    }
+
+    .svg-shape.active {
+        color: var(--primary-white);
+        background: linear-gradient(135deg, #FD432A, #FD2AA9);
+        opacity: 0.95;
+        transition: 0.5s ease-in-out;
+    }
+
+    .csgo-HomeBoosting-services-innerSection h1 {
+        font-size: 3.8rem;
+    }
+
+    .csgo-HomeBoosting-services-box h3 {
+        font-size: 1.2rem;
+    }
+
+    .csgo-HomeBoosting-services-box p {
+        font-size: 0.9rem;
+        font-weight: 300;
+    }
+
+    .csgo-Home-InnerFooter-container {
+        width: 90%;
+    }
+
+    .trns-text {
+        font-size: 150px;
+    }
+
+    .csgo-h1-Subscribe {
+        top: -70px;
+    }
+
+    .csgo-subscribe-email-container {
+        display: flex;
+        margin-top: 200px;
+    }
+
+    .csgo-payment-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .csgo-payment-box-2 {
+        padding-bottom: 25px;
+    }
+
+    .trns-boost-text {
+        font-size: 60px;
+        font-weight: 700;
+    }
+
+
+    .csgo-boost-howtobuy-tabs {
+        margin-top: 60px;
+    }
+
+    .csgo-boost-totalAmount-container svg {
+        height: auto;
+    }
+
+    .csgo-boost-totalAmount-section {
+        width: 90%;
+        margin-top: 15px;
+    }
+
+    .csgo-boost-whychooseus-main-section {
+        margin-top: 0px;
+    }
+
+    .csgo-boost-whychooseus-section {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0em 2em;
+    }
+
+    .csgo-boost-whychooseus-box {
+        height: 45px;
+        display: flex;
+        justify-content: start;
+    }
+
+}
+
+@media only screen and (max-width: 950px) {
+    .csgo-boost-howtobuy-inner-section {
+        width: 96%;
+    }
+
+    .csgo-howtobuy-deatil-container h4 {
+        font-size: 1.5rem;
+    }
+
+    .csgo-howtobuy-deatil-container p {
+        font-size: 1.3rem;
+    }
+
+    .csgo-boost-howtobuy-tabs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: -10px !important;
+        margin: 0 !important;
+
+    }
+
+    .csgo-boost-howtobuy-tab {
+        margin: 0 !important;
+    }
+}
+
+
+@media only screen and (max-width: 890px) {
+    .csgo-heroSection-main-conatiner {
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4em 0em 0em 0em;
+    }
+
+    .csgo-heroSection-text-container {
+        width: 100%;
+        padding-right: 4em;
+    }
+
+    .csgo-heroSection-img-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .csgo-heroSection-img-container img {
+        width: 50%;
+    }
+
+    .hero-angle-corner-img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 40%;
+        z-index: -1000;
+    }
+
+    .csgo-HomeReview-carousel-container {
+        width: 95%;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    .csgo-HomeBoosting-services-innerSection h1 {
+        font-size: 2.5rem;
+    }
+
+    .csgo-howtobuy-box {
+        width: 100%;
+        height: 450px;
+    }
+
+    .csgo-howtobuy-box img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .csgo-howtobuy-deatil-container {
+        left: 10px;
+    }
+
+    .csgo-howtobuy-deatil-container span {
+        width: 100px;
+        height: 100px;
+    }
+
+    .csgo-boost-howtobuy-inner-section {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .csgo-howtobuy-deatil-container h4 {
+        font-size: 1.8rem;
+    }
+
+    .csgo-howtobuy-deatil-container p {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+@media only screen and (max-width: 750px) {
+    .csgo-Home-InnerFooter-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 30px;
+        width: 90%;
+    }
+
+    .footer-line-span {
+        width: 100px;
+    }
+
+    .lowerfooter {
+        padding: 1em 1em;
+    }
+
+    .lowerfooter h6 {
+        font-size: 14px;
+    }
+
+    .lowerfooter p {
+        font-size: 9px;
+
+    }
+
+    .csgo-HomeBoosting-services-line-container {}
+
+    .csgo-HomeBoosting-services-section-conatiner-one {
+        justify-content: start;
+    }
+
+    .csgo-HomeBoosting-services-line-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .csgo-HomeBoosting-services-line {
+        position: absolute;
+        left: -30px;
+        height: 80%;
+        width: 13px;
+    }
+
+    .csgo-HomeBoosting-services-line-span {
+        width: 28px;
+        height: 28px;
+    }
+
+    .csgo-HomeBoosting-services-line-span:nth-child(2) {
+        margin-top: 200px;
+    }
+
+    .csgo-HomeBoosting-services-line-span:nth-child(3) {
+        margin-top: 350px;
+    }
+
+    .csgo-HomeBoosting-services-section {
+        margin-left: 40px;
+        margin-bottom: 20px;
+    }
+
+    .trns-text {
+        font-size: 100px;
+        letter-spacing: -1px;
+    }
+
+    .csgo-h1-Subscribe {
+        top: -50px;
+    }
+
+    .csgo-h1-Subscribe h6 {
+        margin-top: -25px;
+        font-size: 2.5rem;
+    }
+
+    .csgo-h1-Subscribe p {
+        text-align: justify;
+        padding: 0px 25px;
+        width: 100%;
+    }
+
+    .csgo-subscribe-email-container {
+
+        padding: 0px 25px;
+        flex-direction: column;
+    }
+
+    .csgo-subscribe-email-section svg {
+        width: 100%;
+    }
+
+    .SUBSCRIBE-btn {
+        margin-left: 0px;
+    }
+
+
+    .csgo-aboutUs-Offer-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .csgo-aboutUs-Offer-box img {
+        width: 100%;
+    }
+
+    .csgo-aboutUs-Offer-box h6 {
+        font-size: 36px;
+    }
+
+    .csgo-aboutUs-Offer-box p {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .csgo-boost-howtobuy-tabs {
+        margin: 0 !important;
+        margin-top: 20px !important;
+    }
+
+    .csgo-boost-howtobuy-tab {
+        margin: 0 !important;
+    }
+
+}
+
+@media only screen and (max-width: 706px) {
+    .trns-boost-text {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 686px) {
+    .csgo-boost-tabs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .csgo-boost-para h2 {
+        font-size: 2.5rem;
+    }
+
+    .csgo-HomeWhyChoose-services-container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: baseline;
+        align-items: normal;
+    }
+
+    .csgo-HomeWhyChoose-services-detail-section {
+        margin-top: 120px;
+        padding: 0px 20px;
+        width: 93%;
+        right: 25px;
+    }
+
+    .csgo-boost-howtobuy-tabs {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 !important;
+        margin-top: 100px !important;
+    }
+
+    .csgo-boost-howtobuy-tab {
+        margin: 0 !important;
+    }
+
+
+    .csgo-howtobuy-conatianer {
+        height: 150vh;
+    }
+
+    .csgo-boost-totalAmount-container {
+        height: 220px;
+        border-radius: 20px;
+        background-color: #1A1A2C;
+    }
+
+    .csgo-howtobuy-conatianer .tabs-vector-coaching {
+        height: 145vh !important;
+    }
+
+}
+
+@media only screen and (max-width: 609px) {
+    .csgo-heroSection-text-container h1 {
+        font-size: 3rem;
+    }
+
+    .csgo-heroSection-text-container h1 span {
+        font-size: 3rem;
+    }
+
+    .csgo-heroSection-text-container p {
+        font-size: 0.9rem;
+    }
+
+    .csgo-HomeFeatures-innerSection {
+        width: 95%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 25px;
+    }
+
+    .csgo-HomeFeatures-deatil-container p {
+        font-size: 1.2rem;
+    }
+
+    .csgo-aboutUs-Offer-box p {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    .csgo-howtobuy-conatianer {
+        padding: 0;
+    }
+
+    .csgo-howtobuy-conatianer .tabs-vector {
+        margin-top: -80px;
+    }
+
+    .csgo-howtobuy-tabs-conatiner {
+        margin-top: -80px;
+    }
+
+
+}
+
+@media only screen and (max-width: 560px) {
+    .csgo-payment-inner-box {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .csgo-payment-inner-box svg {
+        width: 100%;
+    }
+
+    .csgo-boost-howtobuy-content {
+        margin-top: -80px;
+    }
+
+    .csgo-boost-coaching-p {
+        margin-top: 50px;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 538px) {
+    .main-site-inner-section {
+        margin: 0px 25px;
+    }
+
+    .csgo-heroSection-main-conatiner {
+        margin-left: 25px;
+    }
+
+    .csgo-heroSection-text-container {
+        width: 100%;
+        padding-right: 25px;
+    }
+
+    .csgo-heroSection-text-container h1 {
+        font-size: 2rem;
+        line-height: 50px;
+        text-align: justify;
+    }
+
+    .csgo-heroSection-text-container h1 span {
+        font-size: 2rem;
+    }
+
+    .csgo-heroSection-text-container p {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    .csgo-boost-tab-content.active {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+    }
+
+    .csgo-boost-para {
+        width: 100%;
+    }
+
+    .csgo-boost-para h2 {
+        font-size: 2rem;
+    }
+
+    .csgo-boost-tab-content.active img {
+        display: none;
+    }
+
+    .csgo-boost-content {
+        height: auto;
+    }
+
+    .csgo-HomeBoosting-services-innerSection h1 {
+        font-size: 2rem;
+    }
+
+    .csgo-HomeWhyChoose-services-detail-section h3 {
+        font-size: 1.5rem;
+    }
+
+    .csgo-HomeWhyChoose-services-detail-section p {
+        font-size: 0.7;
+        font-weight: 500;
+        text-align: justify;
+    }
+
+    .csgo-HomeWhyChoose-happyCustomers-txt-box h5 {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .csgo-HomeWhyChoose-happyCustomers-txt-box h6 {
+        font-size: 0.7rem;
+    }
+
+    .csgo-HomeWhyChoose-happyCustomers-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        margin-top: 20px;
+    }
+
+    .accordion h1 {
+        font-size: 1.35rem;
+    }
+
+    .accordion-item-header {
+        font-size: 16px;
+    }
+
+
+    .csgo-payment-box-2 {
+        width: 100%;
+    }
+
+    .csgo-boost-howtobuy-tabs {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 !important;
+        margin-top: 100px !important;
+
+    }
+
+    .csgo-boost-howtobuy-tab {
+        margin: 0 !important;
+    }
+
+    .csgo-boost-faceit-tab span {
+        font-size: 1rem !important;
+    }
+
+    .onlyboostspan span {
+        font-size: 0.75rem !important;
+    }
+
+}
+
+@media only screen and (max-width: 485px) {
+    .csgo-aboutUs-Offer-text-box h6 {
+        font-size: 1.65rem;
+    }
+
+    .csgo-aboutUs-Offer-box p {
+        font-size: 1rem;
+    }
+
+    .csgo-howtobuy-deatil-container p {
+        font-size: 1.25rem;
+        text-align: left;
+    }
+
+    .csgo-howtobuy-box {
+        height: 420px;
+    }
+
+    .csgo-boost-rank-title-box {
+        height: auto;
+    }
+
+    .csgo-boost-rank-title-box h3 {
+        margin-top: 20px;
+    }
+
+    .csgo-boost-rank-select-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .csgo-boost-rank-select-container img {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .addLocationProduct-boost-rank-dropdown {
+        margin-left: 0px;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .csgo-howtobuy-conatianer {
+        height: 225vh;
+    }
+
+    .csgo-boost-totalAmount-container {
+        height: 420px;
+    }
+
+    .csgo-boost-whychooseus-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .csgo-boost-totalAmount-section {
+        flex-direction: column;
+    }
+
+    .csgo-boost-whychooseus-main-section h3 {
+        margin-top: 130px;
+    }
+
+    .csgo-howtobuy-conatianer .tabs-vector {
+        height: 220vh !important;
+    }
+
+    .csgo-howtobuy-conatianer .tabs-vector-coaching {
+        height: 180vh !important;
+    }
+
+    .csgo-howtobuy-conatianer-coaching {
+        height: 170vh;
+    }
+
+    .csgo-boost-faceit-rank-select-container {
+        width: auto !important;
+        height: auto !important;
+    }
+
+    .csgo-boost-faceit-rank-select-container .rank-img-large {
+        width: 56px !important;
+        height: 56px !important;
+    }
+
+    .csgo-howtobuy-conatianer-faceit {
+        height: 180vh;
+    }
+
+    .csgo-howtobuy-conatianer-faceit .tabs-vector-faceit {
+        height: 190vh !important;
+    }
+
+    .csgo-boost-howtobuy-tab-esea span {
+        font-size: 1rem !important;
+    }
+
+    .csgo-howtobuy-conatianer-esea {
+        height: 200vh;
+    }
+
+    .csgo-howtobuy-conatianer-esea .tabs-vector-esea {
+        height: 210vh !important;
+    }
+
+    .csgo-howtobuy-conatianer-esportal {
+        height: 175vh;
+    }
+
+    .csgo-howtobuy-conatianer-esportal .tabs-vector-esportal {
+        height: 185vh !important;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .csgo-HomeBoosting-services-line-span:nth-child(2) {
+        margin-top: 280px;
+    }
+
+    .csgo-HomeBoosting-services-line-span:nth-child(3) {
+        margin-top: 520px;
+    }
+
+    .csgo-boost-faceit-tab-coaching span {
+        font-size: 1rem !important;
+    }
+}
+
+@media only screen and (max-width: 413px) {
+    .csgo-Home-InnerFooter-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .csgo-HomeFeatures-box img {
+        height: 580px;
+    }
+
+    .csgo-HomeBoosting-services-innerSection h1 {
+        font-size: 1.8rem;
+    }
+
+    .csgo-HomeWhyChoose-happyCustomers-txt-box h5 {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    .csgo-HomeWhyChoose-happyCustomers-txt-box h6 {
+        font-size: 0.6rem;
+    }
+
+    .csgo-HomeReview-carousel-container {
+        width: 100%;
+    }
+
+    .csgo-HomeReview-card {
+        margin: 0px;
+    }
+}
+
+@media only screen and (max-width: 355px) {
+    .csgo-howtobuy-conatianer .tabs-vector-coaching {
+        height: 180vh !important;
+    }
+}
+
+/************ RESPONSIVE CSS END ************/
