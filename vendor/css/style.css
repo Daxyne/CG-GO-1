@@ -1809,8 +1809,15 @@ body {
     text-align: center;
     margin: auto;
     margin-bottom: -5px;
-    /* border: 1px solid green; */
 }
+.csgo-boost-howtobuy-tabs-esea{
+    /* border: 1px solid green; */
+    width: 90%;
+}
+/* .csgo-boost-howtobuy-tab-esea svg{
+    width: 70% !important;
+    height: 70% !important;
+} */
 
 .csgo-boost-faceit-tabs {
     width: 100%;
@@ -3180,7 +3187,12 @@ body {
         grid-template-columns: repeat(3, 1fr);
         margin-top: -10px !important;
         margin: 0 !important;
-
+    }
+    .csgo-boost-howtobuy-tabs-esea{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* margin-top: -10px !important; */
+        /* margin: 0 !important; */
     }
 
     .csgo-boost-howtobuy-tab {
@@ -3502,7 +3514,9 @@ body {
         display: block;
     }
 
-
+    .csgo-boost-howtobuy-tab-esea span {
+        font-size: 3vw !important;
+    }
 }
 
 @media only screen and (max-width: 560px) {
@@ -3719,11 +3733,11 @@ body {
     }
 
     .csgo-howtobuy-conatianer .tabs-vector {
-        height: 220vh !important;
+        /* height: 220vh !important; */
     }
 
     .csgo-howtobuy-conatianer .tabs-vector-coaching {
-        height: 180vh !important;
+        /* height: 180vh !important; */
     }
 
     .csgo-howtobuy-conatianer-coaching {
@@ -3745,27 +3759,27 @@ body {
     }
 
     .csgo-howtobuy-conatianer-faceit .tabs-vector-faceit {
-        height: 190vh !important;
+        /* height: 190vh !important; */
     }
 
     .csgo-boost-howtobuy-tab-esea span {
-        font-size: 1rem !important;
+        font-size: 3vw !important;
     }
 
     .csgo-howtobuy-conatianer-esea {
-        height: 200vh;
+        /* height: 200vh; */
     }
 
     .csgo-howtobuy-conatianer-esea .tabs-vector-esea {
-        height: 210vh !important;
+        /* height: 210vh !important; */
     }
 
     .csgo-howtobuy-conatianer-esportal {
-        height: 175vh;
+        /* height: 175vh; */
     }
 
     .csgo-howtobuy-conatianer-esportal .tabs-vector-esportal {
-        height: 185vh !important;
+        /* height: 185vh !important; */
     }
 }
 
@@ -3850,6 +3864,17 @@ body {
     }
     .csgo-boost-rank-title-box h3{
         font-size: 6vw;
+    }
+    .csgo-boost-howtobuy-tabs-esea{
+        grid-template-columns: repeat(1, 1fr);
+        /* border: 1px solid red; */
+    }
+    /* .csgo-boost-howtobuy-tab-esea{
+        height: 100px;
+    } */
+    .csgo-boost-howtobuy-tab-esea svg{
+        width: 72%;
+        height: 72%;
     }
 
 }
