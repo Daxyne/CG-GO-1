@@ -228,8 +228,16 @@ body {
     font-size: 16px;
     font-weight: 400;
     border: none;
+    cursor: pointer;
     background: linear-gradient(180deg, rgba(253, 67, 42, 0.80) 0%, rgba(253, 42, 169, 0.80) 100%);
+    transition: 1s ease-in-out !important;
 }
+.csgo-btn:hover {
+    /* transition: 0.5s ease-in-out; */
+
+    background: transparent;
+}
+
 
 /* Header End */
 
@@ -1181,18 +1189,20 @@ body {
     grid-row-gap: 30px;
     /* border: 1px solid red; */
 }
+
 .csgo-aboutus-do-box {
     /* position: relative; */
     /* border: 1px solid green; */
     margin: auto;
 }
+
 .csgo-aboutus-do-inner-box {
     /* border: 1px solid red; */
     min-height: 350px;
     padding: 27px;
     border-radius: 8px;
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 70% 100%, 0% 100%);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 60% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 70% 100%, 0% 100%);
     background: linear-gradient(180deg, rgba(226, 226, 226, 0.70) 0%, rgba(211, 211, 213, 0.70) 99.99%, rgba(243, 243, 243, 0.70) 100%);
 }
 
@@ -1631,7 +1641,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 80px;
     grid-row-gap: 60px;
-    width: 50%;
+    width: 65%;
     margin: auto;
 
 }
@@ -1642,11 +1652,6 @@ body {
     height: 100%;
     margin: auto;
 }
-
-
-
-
-
 
 
 .csgo-howtobuy-box {
@@ -1691,21 +1696,74 @@ body {
 
 .csgo-howtobuy-deatil-container p {
     color: var(--primary-text-clr);
-    font-size: 0.9rem;
-    font-weight: 400;
+    font-size: 1.4rem;
+    font-weight: 300;
     word-spacing: 5px;
 }
 
 /* csgo-boost-howtobuy-css-end */
+.boost-upRank-section {
+    /* border: 1px solid red; */
+    padding: 5rem;
+}
+
+.shape-try {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* min-height: 500px; */
+    background: linear-gradient(180deg, rgba(29, 44, 73, 0.70) 0%, rgba(67, 67, 111, 0.70) 100%);
+    /* border: 1px solid red; */
+    --notchSize: 50px;
+    padding: 0.5rem 1em 0.5em 1em;
+
+    clip-path:
+        polygon(0% var(--notchSize),
+            var(--notchSize) 0%,
+            calc(100% - var(--notchSize)) 0%,
+            100% var(--notchSize),
+            100% calc(100% - var(--notchSize)),
+            calc(100% - var(--notchSize)) 100%,
+            var(--notchSize) 100%,
+            0% calc(100% - var(--notchSize)));
+    /* clip-path:
+        polygon(0% 10%,
+            /* top left */
+    /* 5% 0%, */
+    /* top left */
+    /* 95% 0%, */
+    /* top right */
+    /* 100% 10%, */
+    /* top right */
+    /* 100% 95%, */
+    /* bottom right */
+    /* 95% 100%, */
+    /* bottom right */
+    /* 5% 100%, */
+    /* bottom left */
+    /* 0 95% */
+    /* bottom left */
+    /* ); */
+    /* */
+}
+
+.your-class {}
+
+
+
+
 
 
 /* HomeBoost Section Start */
 .csgo-howtobuy-conatianer {
     width: 90%;
-    height: 120vh;
+    height: auto;
     padding-top: 30px;
     position: relative;
     margin: auto;
+    /* border: 1px solid yellow; */
 }
 
 .csgo-howtobuy-conatianer img {
@@ -1727,15 +1785,17 @@ body {
 }
 
 .csgo-howtobuy-tabs-conatiner {
-    position: absolute;
-    top: 15px;
-    left: 0;
+    /* position: absolute; */
+    /* top: 15px; */
+    /* left: 0; */
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 15px;
+    /* padding-top: 15px; */
+    /* border: 1px solid green; */
+
 }
 
 
@@ -1745,12 +1805,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 48%;
+    width: 100%;
     text-align: center;
+    margin: auto;
+    margin-bottom: -5px;
+    /* border: 1px solid green; */
 }
 
 .csgo-boost-faceit-tabs {
-    width: 62%;
+    width: 100%;
 }
 
 .csgo-boost-coaching-tabs {
@@ -1814,16 +1877,28 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    /* border: 1px solid red; */
 }
 
 
 .csgo-boost-howtobuy-tab:nth-child(1) {
-    margin-right: -40px;
-
+    /* margin-right: -30px; */
 }
 
 .csgo-boost-howtobuy-tab:nth-child(2) {
-    margin-left: -40px;
+    margin-left: -60px;
+}
+
+.csgo-boost-howtobuy-tab:nth-child(3) {
+    margin-left: -60px;
+}
+
+.csgo-boost-howtobuy-tab:nth-child(4) {
+    margin-left: -60px;
+}
+
+.csgo-boost-howtobuy-tab:nth-child(5) {
+    margin-left: -60px;
 }
 
 .csgo-boost-faceit-tab:nth-child(1) {
@@ -1872,9 +1947,11 @@ body {
 
 .csgo-boost-howtobuy-content {
     width: 80%;
-    height: 100%;
+    height: auto;
     border-radius: 16px;
-    overflow: hidden;
+    /* overflow: hidden; */
+    /* margin-top: 50px; */
+    /* border: 1px solid red; */
 }
 
 .csgo-boost-howtobuy-tab-content {
@@ -1883,7 +1960,8 @@ body {
     margin: auto;
     height: 100%;
     text-align: left;
-    padding: 2.5em 0em 0em 0em;
+    /* border: 1px solid red; */
+    /* padding: 2.5em 0em 0em 0em; */
 }
 
 .csgo-boost-howtobuy-para {
@@ -2200,20 +2278,47 @@ body {
 
 
 .csgo-boost-totalAmount-container {
-    position: relative;
+    /* height: 100%; */
+    /* position: relative; */
+    /* display: flex; */
+    /* justify-content: flex-start; */
+    /* align-items: flex-start; */
+    /* border: 1px solid green; */
+}
+
+.shape-boostinner-card {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: auto;
+    /* min-height: 100px; */
+    background: #1A1A2C;
+    /* border: 1px solid red; */
+    --notchSize: 50px;
+    padding: 1rem 0.5em 0.5em 0.5em;
+
+    clip-path:
+        polygon(0% var(--notchSize),
+            var(--notchSize) 0%,
+            calc(100% - var(--notchSize)) 0%,
+            100% var(--notchSize),
+            100% calc(100% - var(--notchSize)),
+            calc(100% - var(--notchSize)) 100%,
+            var(--notchSize) 100%,
+            0% calc(100% - var(--notchSize)));
 }
 
 .csgo-boost-totalAmount-section {
-    position: absolute;
-    top: 0;
+    /* position: absolute; */
+    /* top: 0; */
     width: 40%;
+    /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 
@@ -2232,8 +2337,8 @@ body {
 
 .csgo-boost-whychooseus-main-section {
     width: 100%;
-    position: absolute;
-    margin-top: 50px;
+    /* position: absolute; */
+    /* border: 1px solid red; */
 }
 
 .csgo-boost-whychooseus-main-section h3 {
@@ -2241,8 +2346,8 @@ body {
     font-size: 16px;
     font-weight: 700;
     text-align: center;
-    margin-top: 80px;
-    padding-bottom: 10px;
+    padding: 20px 0px;
+    margin-top: 15px;
 }
 
 .csgo-boost-whychooseus-section {
@@ -2254,6 +2359,8 @@ body {
 .csgo-boost-whychooseus-box {
     display: flex;
     justify-content: center;
+    height: auto;
+    /* border: 1px solid red; */
 }
 
 .csgo-boost-whychooseus-section span {
@@ -2272,7 +2379,7 @@ body {
 }
 
 .csgo-boost-whychooseus-box h5 {
-    margin: 2px 0px 0px 10px;
+    margin: 0px 0px 0px 10px;
 }
 
 .range-number-container {
@@ -2393,7 +2500,7 @@ body {
     font-family: Poppins;
     font-size: 0.9rem;
     font-weight: 400;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .csgo-boost-coaching-rank-boost-category-section p {
@@ -2859,11 +2966,11 @@ body {
     }
 
     .csgo-howtobuy-conatianer {
-        height: 140vh;
+        /* height: 140vh; */
     }
 
     .csgo-boost-totalAmount-container svg {
-        height: 100%;
+        height: 100%;    
     }
 
     .csgo-boost-totalAmount-container-coaching {
@@ -2871,7 +2978,7 @@ body {
     }
 
     .csgo-howtobuy-conatianer .tabs-vector-coaching {
-        height: 120vh !important;
+        /* height: 120vh !important; */
     }
 }
 
@@ -3106,6 +3213,11 @@ body {
 
 @media only screen and (max-width: 800px) {
 
+    .trns-boost-text {
+        font-size: 50px;
+        -webkit-text-stroke: 3px #f10b6b;
+        letter-spacing: 1px;
+    }
     .csgo-HomeBoosting-services-innerSection h1 {
         font-size: 2.5rem;
     }
@@ -3261,7 +3373,7 @@ body {
 
     .csgo-boost-howtobuy-tabs {
         margin: 0 !important;
-        margin-top: 20px !important;
+        /* margin-top: 20px !important; */
     }
 
     .csgo-boost-howtobuy-tab {
@@ -3273,6 +3385,8 @@ body {
 @media only screen and (max-width: 706px) {
     .trns-boost-text {
         font-size: 30px;
+        -webkit-text-stroke: 1.5px #f10b6b;
+        letter-spacing: 1px;
     }
 }
 
@@ -3304,7 +3418,7 @@ body {
     .csgo-boost-howtobuy-tabs {
         grid-template-columns: repeat(2, 1fr);
         margin: 0 !important;
-        margin-top: 100px !important;
+        /* margin-top: 20px !important; */
     }
 
     .csgo-boost-howtobuy-tab {
@@ -3313,13 +3427,13 @@ body {
 
 
     .csgo-howtobuy-conatianer {
-        height: 150vh;
+        /* height: 150vh; */
     }
 
     .csgo-boost-totalAmount-container {
-        height: 220px;
-        border-radius: 20px;
-        background-color: #1A1A2C;
+        /* height: 220px; */
+        /* border-radius: 20px; */
+        /* background-color: #1A1A2C; */
     }
 
     .csgo-howtobuy-conatianer .tabs-vector-coaching {
@@ -3357,7 +3471,7 @@ body {
     }
 
     .csgo-howtobuy-conatianer {
-        padding: 0;
+        /* padding: 0; */
     }
 
     .csgo-howtobuy-conatianer .tabs-vector {
@@ -3365,7 +3479,7 @@ body {
     }
 
     .csgo-howtobuy-tabs-conatiner {
-        margin-top: -80px;
+        /* margin-top: -80px; */
     }
 
 
@@ -3382,7 +3496,7 @@ body {
     }
 
     .csgo-boost-howtobuy-content {
-        margin-top: -80px;
+        /* margin-top: -80px; */
     }
 
     .csgo-boost-coaching-p {
@@ -3490,7 +3604,7 @@ body {
     .csgo-boost-howtobuy-tabs {
         grid-template-columns: repeat(2, 1fr);
         margin: 0 !important;
-        margin-top: 100px !important;
+        /* margin-top: 100px !important; */
 
     }
 
@@ -3509,6 +3623,13 @@ body {
 }
 
 @media only screen and (max-width: 485px) {
+    .csgo-boost-howtobuy-tab span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5vw !important;
+        margin-top: -5px;
+    }
     .csgo-aboutUs-Offer-text-box h6 {
         font-size: 1.65rem;
     }
@@ -3524,6 +3645,7 @@ body {
 
     .csgo-howtobuy-box {
         height: 420px;
+        /* border: 1px solid red; */
     }
 
     .csgo-boost-rank-title-box {
@@ -3551,23 +3673,29 @@ body {
     }
 
     .csgo-howtobuy-conatianer {
-        height: 225vh;
+        /* height: 225vh; */
+        /* border: 1px solid red; */
     }
 
     .csgo-boost-totalAmount-container {
-        height: 420px;
+        /* height: 420px; */
     }
 
     .csgo-boost-whychooseus-section {
         grid-template-columns: repeat(1, 1fr);
+        /* border: 1px solid red; */
     }
-
+    .csgo-boost-whychooseus-box{
+        /* border: 1px solid red; */
+        /* display: flex; */
+        justify-content: center;
+    }
     .csgo-boost-totalAmount-section {
         flex-direction: column;
     }
 
     .csgo-boost-whychooseus-main-section h3 {
-        margin-top: 130px;
+        /* margin-top: 130px; */
     }
 
     .csgo-howtobuy-conatianer .tabs-vector {
@@ -3639,6 +3767,11 @@ body {
     .csgo-Home-InnerFooter-container {
         grid-template-columns: repeat(1, 1fr);
     }
+    .trns-boost-text {
+        font-size: 18px;
+        -webkit-text-stroke: 1.5px #f10b6b;
+        letter-spacing: 1px;
+    }
 
     .csgo-HomeFeatures-box img {
         height: 580px;
@@ -3666,10 +3799,31 @@ body {
     }
 }
 
+@media only screen and (max-width: 390px) {
+    .csgo-howtobuy-box{
+        height: 355px !important;
+    }
+    .csgo-howtobuy-deatil-container span{
+        width: 70px;
+        height: 70px;
+        padding: 10px;
+    }
+    .csgo-howtobuy-deatil-container h4{
+        font-size: 7vw;
+    }
+    .csgo-howtobuy-deatil-container p{
+        font-size: 5vw;
+    }
+}
+
 @media only screen and (max-width: 355px) {
     .csgo-howtobuy-conatianer .tabs-vector-coaching {
         height: 180vh !important;
     }
+    .csgo-boost-rank-title-box h3{
+        font-size: 6vw;
+    }
+
 }
 
 /************ RESPONSIVE CSS END ************/
