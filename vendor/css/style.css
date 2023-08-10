@@ -1820,7 +1820,8 @@ body {
 } */
 
 .csgo-boost-faceit-tabs {
-    width: 100%;
+    width: 90%;
+    /* border: 1px solid green; */
 }
 
 .csgo-boost-coaching-tabs {
@@ -3197,6 +3198,9 @@ body {
 
     .csgo-boost-howtobuy-tab {
         margin: 0 !important;
+    }
+    .csgo-boost-faceit-tab span{
+        font-size: 1rem !important;
     }
 }
 
