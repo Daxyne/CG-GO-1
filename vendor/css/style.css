@@ -230,15 +230,14 @@ body {
     border: none;
     cursor: pointer;
     background: linear-gradient(180deg, rgba(253, 67, 42, 0.80) 0%, rgba(253, 42, 169, 0.80) 100%);
-    transition: 1s ease-in-out !important;
+    transition: background 1s ease !important;
 }
 .csgo-btn:hover {
     /* transition: 0.5s ease-in-out; */
-
-    background: transparent;
+    background: linear-gradient(180deg, rgba(197, 51, 32, 0.8) 0%, rgba(201, 33, 134, 0.8) 100%);
+    /* border-width: 10px; */
+    /* background: transparent; */
 }
-
-
 /* Header End */
 
 /* CSGO Hero Section Start */
@@ -1321,6 +1320,7 @@ body {
     margin: auto;
     display: flex;
     justify-content: center;
+    /* border: 1px solid red; */
 }
 
 .csgo-contactus-btn {
@@ -1333,7 +1333,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 60px;
+    /* margin-left: 60px; */
     margin-bottom: 40px;
 }
 
@@ -1814,10 +1814,10 @@ body {
     /* border: 1px solid green; */
     width: 90%;
 }
-/* .csgo-boost-howtobuy-tab-esea svg{
+.csgo-boost-howtobuy-tab-esea svg{
     width: 70% !important;
     height: 70% !important;
-} */
+}
 
 .csgo-boost-faceit-tabs {
     width: 90%;
@@ -3244,6 +3244,12 @@ body {
 
 }
 
+@media only screen and (max-width: 840px) {
+    .csgo-boost-howtobuy-tab-esea span{
+        font-size: 2vw !important;
+    }
+}
+
 @media only screen and (max-width: 800px) {
 
     .trns-boost-text {
@@ -3519,7 +3525,7 @@ body {
     }
 
     .csgo-boost-howtobuy-tab-esea span {
-        font-size: 3vw !important;
+        /* font-size: 3vw !important; */
     }
 }
 
@@ -3785,6 +3791,10 @@ body {
     .csgo-howtobuy-conatianer-esportal .tabs-vector-esportal {
         /* height: 185vh !important; */
     }
+    .csgo-boost-howtobuy-tabs-esea svg{
+        width: 100% !important;
+        height: 100% !important;
+    }
 }
 
 @media only screen and (max-width: 440px) {
@@ -3877,8 +3887,8 @@ body {
         height: 100px;
     } */
     .csgo-boost-howtobuy-tab-esea svg{
-        width: 72%;
-        height: 72%;
+        width: 70% !important;
+        height: 70% !important;
     }
 
 }
