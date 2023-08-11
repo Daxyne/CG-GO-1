@@ -232,12 +232,14 @@ body {
     background: linear-gradient(180deg, rgba(253, 67, 42, 0.80) 0%, rgba(253, 42, 169, 0.80) 100%);
     transition: background 1s ease !important;
 }
+
 .csgo-btn:hover {
     /* transition: 0.5s ease-in-out; */
     background: linear-gradient(180deg, rgba(197, 51, 32, 0.8) 0%, rgba(201, 33, 134, 0.8) 100%);
     /* border-width: 10px; */
     /* background: transparent; */
 }
+
 /* Header End */
 
 /* CSGO Hero Section Start */
@@ -1810,11 +1812,13 @@ body {
     margin: auto;
     margin-bottom: -5px;
 }
-.csgo-boost-howtobuy-tabs-esea{
+
+.csgo-boost-howtobuy-tabs-esea {
     /* border: 1px solid green; */
     width: 90%;
 }
-.csgo-boost-howtobuy-tab-esea svg{
+
+.csgo-boost-howtobuy-tab-esea svg {
     width: 70% !important;
     height: 70% !important;
 }
@@ -2087,7 +2091,8 @@ body {
     /* height: 110px; */
     /* border: 1px solid red; */
 }
-.csgo-boost-rank-title-box h3{
+
+.csgo-boost-rank-title-box h3 {
     padding-bottom: 10px;
 }
 
@@ -2651,9 +2656,76 @@ body {
 
 
 
+/************ JOBS PAGE CSS START ************/
+.csgo-jobs-hero-container {
+    padding: 4.5rem 0rem;
+    background: linear-gradient(180deg, rgba(29, 44, 73, 0.70) 0%, rgba(67, 67, 111, 0.70) 100%);
+    backdrop-filter: blur(25px);
+}
+
+.csgo-jobs-hero-section {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.csgo-jobs-hero-section h2 {
+    color: #EFF3FB;
+    font-size: 2.2rem;
+    font-style: italic;
+    font-weight: 700;
+    padding-bottom: 25px;
+}
 
 
+.csgo-jobs-card-container {
+    /* border: 1px solid yellow; */
+}
 
+.csgo-jobs-inner-container {
+    width: 90%;
+    margin: auto;
+    padding: 5em 0em;
+    /* border: 1px solid green; */
+}
+
+.csgo-jobs-card-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 30px;
+    width: 50%;
+    height: 100%;
+    padding: 3em 3em;
+    background: linear-gradient(180deg, rgba(29, 44, 73, 0.70) 0%, rgba(67, 67, 111, 0.70) 100%);
+    /* background: linear-gradient(180deg, rgba(253, 67, 42, 0.80) 0%, rgba(253, 42, 169, 0.80) 100%); */
+    -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 86%, 0% 20%);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 86%, 0% 20%);
+}
+
+.csgo-jobs-card-box h3 {
+    color: #EFF3FB;
+    font-size: 1.5vw;
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+}
+
+.csgo-jobs-card-box h5 {
+    color: #BEBEBE;
+    font-weight: 400;
+    word-spacing: 2px;
+}
+.csgo-jobs-card-box h5 span{
+    color: #fff;
+}
+
+.job-apply-btn {
+    -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 86%, 0% 20%);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 86%, 0% 20%);
+}
+
+/************ JOBS PAGE CSS END ************/
 
 
 
@@ -2940,7 +3012,8 @@ body {
     .csgo-boost-howtobuy-tabs {
         /* width: 100%; */
     }
-    .csgo-boost-rank-title-box:nth-child(1){
+
+    .csgo-boost-rank-title-box:nth-child(1) {
         /* display: flex; */
         /* justify-content: space-between; */
         /* align-items: center; */
@@ -2991,7 +3064,7 @@ body {
     }
 
     .csgo-boost-totalAmount-container svg {
-        height: 100%;    
+        height: 100%;
     }
 
     .csgo-boost-totalAmount-container-coaching {
@@ -3001,10 +3074,11 @@ body {
     .csgo-howtobuy-conatianer .tabs-vector-coaching {
         /* height: 120vh !important; */
     }
-    .csgo-coaching-waiting-txt-section{
+
+    .csgo-coaching-waiting-txt-section {
         margin-left: 0px;
     }
-    
+
 }
 
 @media only screen and (max-width: 991px) {
@@ -3168,6 +3242,18 @@ body {
         justify-content: start;
     }
 
+    .csgo-jobs-card-box {
+        width: 80%;
+    }
+
+    .csgo-txt-job-box h3 {
+        font-size: 2.2vw;
+    }
+
+    .csgo-txt-job-box h5 {
+        font-size: 1.8vw;
+    }
+
 }
 
 @media only screen and (max-width: 950px) {
@@ -3189,7 +3275,8 @@ body {
         margin-top: -10px !important;
         margin: 0 !important;
     }
-    .csgo-boost-howtobuy-tabs-esea{
+
+    .csgo-boost-howtobuy-tabs-esea {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         /* margin-top: -10px !important; */
@@ -3199,7 +3286,8 @@ body {
     .csgo-boost-howtobuy-tab {
         margin: 0 !important;
     }
-    .csgo-boost-faceit-tab span{
+
+    .csgo-boost-faceit-tab span {
         font-size: 1rem !important;
     }
 }
@@ -3245,7 +3333,7 @@ body {
 }
 
 @media only screen and (max-width: 840px) {
-    .csgo-boost-howtobuy-tab-esea span{
+    .csgo-boost-howtobuy-tab-esea span {
         font-size: 2vw !important;
     }
 }
@@ -3257,6 +3345,7 @@ body {
         -webkit-text-stroke: 3px #f10b6b;
         letter-spacing: 1px;
     }
+
     .csgo-HomeBoosting-services-innerSection h1 {
         font-size: 2.5rem;
     }
@@ -3481,6 +3570,27 @@ body {
 
 }
 
+@media only screen and (max-width: 635px) {
+    .csgo-jobs-card-box {
+        width: 100%;
+        padding: 3em 1em;
+
+    }
+
+    .csgo-txt-job-box h3 {
+        font-size: 3vw;
+    }
+
+    .csgo-txt-job-box h5 {
+        font-size: 2.2vw;
+    }
+
+    .job-apply-btn {
+        padding: 8px 26px;
+        font-size: 3vw;
+    }
+}
+
 @media only screen and (max-width: 609px) {
     .csgo-heroSection-text-container h1 {
         font-size: 3rem;
@@ -3520,7 +3630,8 @@ body {
     .csgo-howtobuy-tabs-conatiner {
         /* margin-top: -80px; */
     }
-    .csgo-boost-rank-title-box:nth-child(1){
+
+    .csgo-boost-rank-title-box:nth-child(1) {
         display: block;
     }
 
@@ -3667,13 +3778,14 @@ body {
 }
 
 @media only screen and (max-width: 485px) {
-    .csgo-boost-howtobuy-tab span{
+    .csgo-boost-howtobuy-tab span {
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 2.5vw !important;
         margin-top: -5px;
     }
+
     .csgo-aboutUs-Offer-text-box h6 {
         font-size: 1.65rem;
     }
@@ -3729,11 +3841,13 @@ body {
         grid-template-columns: repeat(1, 1fr);
         /* border: 1px solid red; */
     }
-    .csgo-boost-whychooseus-box{
+
+    .csgo-boost-whychooseus-box {
         /* border: 1px solid red; */
         /* display: flex; */
         justify-content: center;
     }
+
     .csgo-boost-totalAmount-section {
         flex-direction: column;
     }
@@ -3791,7 +3905,8 @@ body {
     .csgo-howtobuy-conatianer-esportal .tabs-vector-esportal {
         /* height: 185vh !important; */
     }
-    .csgo-boost-howtobuy-tabs-esea svg{
+
+    .csgo-boost-howtobuy-tabs-esea svg {
         width: 100% !important;
         height: 100% !important;
     }
@@ -3815,6 +3930,7 @@ body {
     .csgo-Home-InnerFooter-container {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .trns-boost-text {
         font-size: 18px;
         -webkit-text-stroke: 1.5px #f10b6b;
@@ -3845,6 +3961,7 @@ body {
     .csgo-HomeReview-card {
         margin: 0px;
     }
+
     .range-slider {
         position: relative;
         width: 100%;
@@ -3853,40 +3970,45 @@ body {
 }
 
 @media only screen and (max-width: 390px) {
-    .csgo-howtobuy-box{
+    .csgo-howtobuy-box {
         height: 355px !important;
     }
-    .csgo-howtobuy-deatil-container span{
+
+    .csgo-howtobuy-deatil-container span {
         width: 70px;
         height: 70px;
         padding: 10px;
     }
-    .csgo-howtobuy-deatil-container h4{
+
+    .csgo-howtobuy-deatil-container h4 {
         font-size: 7vw;
     }
-    .csgo-howtobuy-deatil-container p{
+
+    .csgo-howtobuy-deatil-container p {
         font-size: 5vw;
     }
-    .csgo-boost-howtobuy-tab{
 
-    }
+    .csgo-boost-howtobuy-tab {}
 }
 
 @media only screen and (max-width: 355px) {
     .csgo-howtobuy-conatianer .tabs-vector-coaching {
         height: 180vh !important;
     }
-    .csgo-boost-rank-title-box h3{
+
+    .csgo-boost-rank-title-box h3 {
         font-size: 6vw;
     }
-    .csgo-boost-howtobuy-tabs-esea{
+
+    .csgo-boost-howtobuy-tabs-esea {
         grid-template-columns: repeat(1, 1fr);
         /* border: 1px solid red; */
     }
+
     /* .csgo-boost-howtobuy-tab-esea{
         height: 100px;
     } */
-    .csgo-boost-howtobuy-tab-esea svg{
+    .csgo-boost-howtobuy-tab-esea svg {
         width: 70% !important;
         height: 70% !important;
     }
