@@ -43,7 +43,9 @@ body {
 .main-site-container {}
 
 .main-site-inner-section {
-    margin: 0px 70px;
+    /* padding: 0px 70px; */
+    /* margin: 0px 0px; */
+    /* border: 1px solid red; */
 }
 
 /* UpperHeader start */
@@ -62,7 +64,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0px;
+    padding: 10px 60px;
     background: #1A1A2C;
     border-top: 1px solid #282834;
     border-bottom: 1px solid #282834;
@@ -238,10 +240,7 @@ body {
 }
 
 .csgo-btn:hover {
-    /* transition: 0.5s ease-in-out; */
     background: linear-gradient(180deg, rgba(197, 51, 32, 0.8) 0%, rgba(201, 33, 134, 0.8) 100%);
-    /* border-width: 10px; */
-    /* background: transparent; */
 }
 
 /* Header End */
@@ -255,6 +254,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
 }
 
 .hero-angle-corner-img {
@@ -3913,7 +3913,6 @@ body {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         padding-top: 0.5em;
-        /* padding-top: 1.5em; */
         padding-bottom: 1.5em;
     }
 
