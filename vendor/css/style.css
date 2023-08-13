@@ -1999,7 +1999,11 @@ body {
 .csgo-boostmain-tab span {
     font-size: 0.8rem !important;
 }
-
+.csgo-boostmain-tab:first-child svg path {
+    fill: #fc0d48;
+    /* box-shadow: 0px 0px 10px rgba(153, 126, 130, 0.774); Adjust the shadow parameters as needed */
+     /* filter: drop-shadow(0 0 5px rgba(151, 58, 69, 0.781)); */
+}
 
 
 .csgo-boost-howtobuy-tab span {
@@ -2017,6 +2021,8 @@ body {
     height: 100%;
     display: flex;
 }
+/* Apply the hover effect */
+
 
 
 .csgo-boost-howtobuy-content {
