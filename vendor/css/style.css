@@ -2079,6 +2079,13 @@ body {
     display: none;
 }
 
+#firstDropdownValue{
+    display: none;
+}
+#secondDropdownValue{
+    display: none;
+}
+
 .addLocationProduct-boost-rank-option {
     display: block;
     padding: 10px;
@@ -2090,6 +2097,19 @@ body {
 .addLocationProduct-boost-rank-option:hover {
     background-color: #282834;
 }
+
+.addLocationProduct-boost-rank-option1 {
+    display: block;
+    padding: 10px;
+    color: var(--primary-text-clr);
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.addLocationProduct-boost-rank-option1:hover {
+    background-color: #282834;
+}
+
 
 .csgo-boost-rank-boost-category-conatiner {
     display: flex;
