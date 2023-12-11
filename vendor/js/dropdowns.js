@@ -58,7 +58,7 @@
 //   });
 // });
 
-
+/* Boost RankBoost 1 */
 function addLocationProducttoggleDropdownBoostRank(clickedToggle) {
   clickedToggle.classList.toggle('open');
 }
@@ -75,9 +75,12 @@ dropdownOptions1.forEach(function (option) {
 
     // Set the value for the first input
     document.getElementById('firstDropdownValue').value = selectedOptionText;
+    console.log(selectedOptionText);
   });
 });
+/* Boost RankBoost 1 */
 
+/* Boost RankBoost 2 */
 function addLocationProducttoggleDropdownBoostRank1(clickedToggle) {
   clickedToggle.classList.toggle('open');
 }
@@ -94,8 +97,18 @@ dropdownOptions2.forEach(function (option) {
 
     // Set the value for the second input
     document.getElementById('secondDropdownValue').value = selectedOptionText;
+    console.log(selectedOptionText);
   });
 });
+/* Boost RankBoost 2 */
+
+/* Boost RankBoost 3 */
+
+/* Boost RankBoost 3 */
+
+
+
+
 
 // var dropdownOptions = document.querySelectorAll('.addLocationProduct-boost-rank-option');
 

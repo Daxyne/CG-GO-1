@@ -1059,12 +1059,15 @@ body {
 
 .csgo-Home-InnerFooter-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 100px;
-    width: 68%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    width: 85%;
     margin: auto;
     margin-top: 50px;
+    /* border: 1px solid red; */
 }
+
+.csgo-Home-InnerFooter-section {}
 
 .csgo-Home-InnerFooter-section h5 {
     color: #EFF3FB;
@@ -1082,7 +1085,7 @@ body {
 }
 
 .csgo-footer-list-container {
-    margin-top: 40px;
+    margin-top: 00px;
 }
 
 .csgo-footer-list-container li {
@@ -2079,10 +2082,11 @@ body {
     display: none;
 }
 
-#firstDropdownValue{
+#firstDropdownValue {
     display: none;
 }
-#secondDropdownValue{
+
+#secondDropdownValue {
     display: none;
 }
 
@@ -3076,6 +3080,18 @@ body {
         margin: 0 !important;
     }
 
+    .csgo-boost-faceit-tab {
+        /* border: 1px solid red; */
+    }
+
+    .csgo-boost-faceit-tab:first-child {
+        margin-left: 30px !important;
+    }
+
+    .csgo-boost-faceit-tab:last-child {
+        margin-left: -30px !important;
+    }
+
     .csgo-boost-faceit-tab span {
         font-size: 1rem !important;
     }
@@ -3317,7 +3333,6 @@ body {
     }
 
     .csgo-subscribe-email-container {
-
         padding: 0px 25px;
         flex-direction: column;
     }
@@ -3361,7 +3376,7 @@ body {
     }
 
     .csgo-boost-para h5 {
-        font-size: 1vw;
+        font-size: 1rem !important;
     }
 
     .csgo-boost-para .csgo-btn {
@@ -3504,6 +3519,10 @@ body {
     .csgo-boost-coaching-p {
         margin-top: 50px;
         text-align: justify;
+    }
+
+    .csgo-boost-para h5 {
+        font-size: 0.8rem !important;
     }
 }
 
@@ -3688,8 +3707,8 @@ body {
     }
 
     .csgo-boost-rank-select-container img {
-        width: 100% !important;
-        height: 100% !important;
+        /* width: 100% !important; */
+        /* height: 100% !important; */
     }
 
     .addLocationProduct-boost-rank-dropdown {
@@ -3728,6 +3747,8 @@ body {
         width: 100% !important;
         height: 100% !important;
     }
+
+
 }
 
 @media only screen and (max-width: 440px) {
@@ -3762,6 +3783,7 @@ body {
     }
 
     .csgo-boost-para h2 {
+        font-size: 1rem !important;
         margin: 0 !important;
         padding: 0 !important;
     }
@@ -3773,8 +3795,10 @@ body {
 
     .csgo-boost-para .csgo-btn {
         padding: 5px 5px;
-        font-size: 1vw !important;
+        margin-top: 10px;
+        font-size: .8rem !important;
     }
+
 
 }
 
