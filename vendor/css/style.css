@@ -1533,6 +1533,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border: 1px solid red; */
+}
+
+.csgo-boost-section-1 {
+    height: 50dvh;
+
 }
 
 .boost-hero-text-container {
@@ -1544,6 +1550,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border: 1px solid red; */
 }
 
 .trns-boost-text {
@@ -2030,6 +2037,27 @@ body {
     font-weight: 500;
 }
 
+.addLocationProduct-boost-rank-toggle-new {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 5px 5px 15px;
+    width: 250px;
+    height: 57px;
+    color: #EFF3FB;
+    background-color: transparent;
+    border: 1px solid var(--primary-text-clr);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.addLocationProduct-boost-rank-toggle-new:focus {
+    outline: none;
+}
+
 .addLocationProduct-boost-rank-toggle img {
     margin-right: 10px;
 }
@@ -2070,6 +2098,18 @@ body {
     z-index: 1;
     transition: max-height 0.3s ease-in-out;
 }
+
+
+.addLocationProduct-boost-rank-option-new {
+    background: var(--primary, #1A1A2C);
+    color: var(--primary-text-clr);
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+
+
+
 
 .addLocationProduct-boost-rank-toggle.open+.addLocationProduct-boost-rank-dropdown-menu {
     max-height: 230px;

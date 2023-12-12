@@ -83,5 +83,12 @@ const burgerIcon = document.querySelector('.sidebar-header');
 const container = document.querySelector('.csgo-menu-conatiner');
 
 burgerIcon.addEventListener('click', () => {
-  container.classList.toggle('expanded');
+    container.classList.toggle('expanded');
 });
+
+// Rank Dropdown Img Change
+const rankImg = (selectedValue) => {
+    var rankImage = document.getElementById("rankImage");
+    rankImage.src = `./assets/img/${selectedValue}.png`;
+    console.log('Selected Value:', selectedValue);
+}
