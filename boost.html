@@ -217,23 +217,23 @@
                                             <img src="./assets/img/rank.png" alt="" class="rank-img" id="rankImage">
 
                                             <select class="addLocationProduct-boost-rank-toggle-new" id="rankSelect"
-                                                onchange="rankImg(this.value)" name="">
+                                                onchange="updatePrice()" name="">
                                                 <option value="" selected disabled>
                                                     Select Rank</option>
                                                 <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Silver I">
+                                                    value="SilverI">
                                                     <span>Silver I</span>
                                                 </option>
                                                 <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Silver II">
+                                                    value="SilverII">
                                                     Silver II
                                                 </option>
                                                 <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Silver III">
+                                                    value="SilverIII">
                                                     Silver III
                                                 </option>
                                                 <option class="addLocationProduct-boost-rank-option-new"
-                                                    value="Silver IV">
+                                                    value="SilverIV">
                                                     Silver IV
                                                 </option>
                                                 <option class="addLocationProduct-boost-rank-option-new"
@@ -400,8 +400,9 @@
                                         <div class="csgo-boost-rank-boost-category-box">
                                             <h5>Solo Play</h5>
                                             <img src="./assets/icons/info-gray.svg" alt="">
-                                            <label class="switch" onclick="SoloPlay(this)">
-                                                <input type="checkbox">
+                                            <label class="switch">
+                                                <!-- <input type="checkbox"> -->
+                                                <input type="checkbox" id="checkbox1" onchange="updatePrice()">
                                                 <span class="slider"></span>
                                             </label>
                                         </div>
@@ -411,8 +412,9 @@
                                         <div class="csgo-boost-rank-boost-category-box">
                                             <h5>Priority Order</h5>
                                             <img src="./assets/icons/info-gray.svg" alt="">
-                                            <label class="switch" onclick="PriorityOrder(this)">
-                                                <input type="checkbox">
+                                            <label class="switch">
+                                                <!-- <input type="checkbox"> -->
+                                                <input type="checkbox" id="checkbox2" onchange="updatePrice()">
                                                 <span class="slider"></span>
                                             </label>
                                         </div>
@@ -422,8 +424,9 @@
                                         <div class="csgo-boost-rank-boost-category-box">
                                             <h5>Play with booster</h5>
                                             <img src="./assets/icons/info-gray.svg" alt="">
-                                            <label class="switch" onclick="PlayWithBooster(this)">
-                                                <input type="checkbox">
+                                            <label class="switch">
+                                                <!-- <input type="checkbox"> -->
+                                                <input type="checkbox" id="checkbox3" onchange="updatePrice()">
                                                 <span class="slider"></span>
                                             </label>
                                         </div>
@@ -436,7 +439,7 @@
                                         <div class="csgo-boost-totalAmount-section">
                                             <label>
                                                 <h3>Total Amount</h3>
-                                                <h4 class="boostPrice">56$</h4>
+                                                <h4 id="priceTag">$0.00</h4>
                                             </label>
                                             <button class="csgo-btn proceed-checkoutbtn">Procced To Checkout</button>
                                         </div>

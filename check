@@ -1,0 +1,94 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silver Options</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        select,
+        input {
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        h5 {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Select a Silver Option:</h1>
+
+    <label for="silverOptions">Choose a Silver option:</label>
+    <select id="rankSelect" onchange="updatePrice()">
+        <option value="" selected disabled>Select Rank</option>
+        <option value="silver1">Silver 1</option>
+        <option value="silver2">Silver 2</option>
+        <option value="silver3">Silver 3</option>
+        <option value="silver4">Silver 4</option>
+        <option value="silver5">Silver 5</option>
+    </select>
+
+    <br>
+
+    <label for="checkbox1">
+        Solo Play
+        <input type="checkbox" id="checkbox1" onchange="updatePrice()">
+    </label>
+
+    <label for="checkbox2">
+        Priority Order
+        <input type="checkbox" id="checkbox2" onchange="updatePrice()">
+    </label>
+
+    <label for="checkbox3">
+        Play with booster
+        <input type="checkbox" id="checkbox3" onchange="updatePrice()">
+    </label>
+
+    <h5 id="priceTag">Price: $0.00</h5>
+
+    <script>
+        function updatePrice() {
+            var selectedOption = document.getElementById("rankSelect").value;
+
+            var prices = {
+                silver1: 10.00,
+                silver2: 15.00,
+                silver3: 20.00,
+                silver4: 25.00,
+                silver5: 30.00
+            };
+
+            var additionalAmount = 0;
+
+            if (document.getElementById("checkbox1").checked) {
+                additionalAmount += 0.20;
+            }
+
+            if (document.getElementById("checkbox2").checked) {
+                additionalAmount += 0.20;
+            }
+
+            if (document.getElementById("checkbox3").checked) {
+                additionalAmount += 0.20;
+            }
+
+            var totalPrice = prices[selectedOption] * (1 + additionalAmount);
+
+            document.getElementById("priceTag").innerText = "Price: $" + totalPrice.toFixed(2);
+        }
+    </script>
+
+</body>
+
+</html>

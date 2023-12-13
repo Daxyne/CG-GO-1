@@ -87,10 +87,44 @@ burgerIcon.addEventListener('click', () => {
 });
 
 // Rank Dropdown Img Change
-const rankImg = (selectedValue) => {
+// const rankImg = () => {
+// var rankImage = document.getElementById("rankImage");
+// rankImage.src = `./assets/img/${selectedValue}.png`;
+// console.log('Selected Value:', selectedValue);
+const updatePrice = () => {
+
+    //Price
+    var selectedOption = document.getElementById("rankSelect").value;
+
+    var prices = {
+        SilverI: 10.00,
+        SilverII: 15.00,
+        SilverIII: 20.00,
+        SilverIV: 25.00,
+        SilverV: 30.00
+    };
+
+    var additionalAmount = 0;
+
+    if (document.getElementById("checkbox1").checked) {
+        additionalAmount += 0.20;
+    }
+
+    if (document.getElementById("checkbox2").checked) {
+        additionalAmount += 0.20;
+    }
+
+    if (document.getElementById("checkbox3").checked) {
+        additionalAmount += 0.20;
+    }
+
+    var totalPrice = prices[selectedOption] * (1 + additionalAmount);
+
+    document.getElementById("priceTag").innerText = "$" + totalPrice.toFixed(2);
+
+    // Rank Dropdown Img Change
     var rankImage = document.getElementById("rankImage");
-    rankImage.src = `./assets/img/${selectedValue}.png`;
-    console.log('Selected Value:', selectedValue);
+    rankImage.src = `./assets/img/${selectedOption}.png`;
 }
 
 
