@@ -92,3 +92,77 @@ const rankImg = (selectedValue) => {
     rankImage.src = `./assets/img/${selectedValue}.png`;
     console.log('Selected Value:', selectedValue);
 }
+
+
+/* Price Increase Percentage Start */
+// function IncreaseTwentyPerc(element) {
+//     const checkbox = element.querySelector('input');
+//     const boostPriceElement = document.querySelector('.boostPrice');
+//     const currentPrice = parseFloat(boostPriceElement.textContent.match(/\d+/)[0]);
+
+//     if (checkbox.checked) {
+//         const increaseAmount = currentPrice * 0.2;
+//         const newPrice = currentPrice + increaseAmount;
+
+//         boostPriceElement.textContent = `${newPrice}$`;
+//     } else {
+//         boostPriceElement.textContent = `${currentPrice}$`;
+//     }
+// }
+
+// function SoloPlay(element) {
+//     const checkbox = element.querySelector('input');
+//     const boostPriceElement = document.querySelector('.boostPrice');
+//     const currentPrice = parseFloat(boostPriceElement.textContent.match(/\d+/)[0]);
+
+//     // const originalPrice = parseFloat(boostPriceElement.dataset.originalPrice || currentPrice); // Store original price
+//     const increaseAmount = currentPrice * 0.2;
+
+//     if (checkbox.checked) {
+//         boostPriceElement.textContent = `${currentPrice + increaseAmount}$`;
+//     } else {
+//         boostPriceElement.textContent = `${currentPrice}$`;
+//     }
+
+//     // Update data attribute with the original price after each click
+//     boostPriceElement.dataset.originalPrice = currentPrice;
+// }
+
+
+// function PriorityOrder(element) {
+//     const checkbox = element.querySelector('input');
+//     const boostPriceElement = document.querySelector('.boostPrice');
+//     const currentPrice = parseFloat(boostPriceElement.textContent.match(/\d+/)[0]);
+
+//     const originalPrice = parseFloat(boostPriceElement.dataset.originalPrice || currentPrice); // Store original price
+//     const increaseAmount = originalPrice * 0.2;
+
+//     if (checkbox.checked) {
+//         boostPriceElement.textContent = `${originalPrice + increaseAmount}$`;
+//     } else {
+//         boostPriceElement.textContent = `${originalPrice}$`;
+//     }
+
+//     // Update data attribute with the original price after each click
+//     boostPriceElement.dataset.originalPrice = originalPrice;
+// }
+// function PlayWithBooster(element) {
+//     const checkbox = element.querySelector('input');
+//     const boostPriceElement = document.querySelector('.boostPrice');
+//     const currentPrice = parseFloat(boostPriceElement.textContent.match(/\d+/)[0]);
+
+//     const originalPrice = parseFloat(boostPriceElement.dataset.originalPrice || currentPrice); // Store original price
+//     const increaseAmount = originalPrice * 0.2;
+
+//     if (checkbox.checked) {
+//         boostPriceElement.textContent = `${originalPrice + increaseAmount}$`;
+//     } else {
+//         boostPriceElement.textContent = `${originalPrice}$`;
+//     }
+
+//     // Update data attribute with the original price after each click
+//     boostPriceElement.dataset.originalPrice = originalPrice;
+// }
+
+/* Price Increase Percentage End */
+
