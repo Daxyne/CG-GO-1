@@ -1734,13 +1734,24 @@ body {
     margin-bottom: -5px;
 }
 
-.csgo-boost-howtobuy-tabs-esea {
+.csgo-boost-howtobuy-tabs-esea:first-child{
+    display: flex !important;
+    justify-content: center !important;
     width: 90%;
+}
+.csgo-boost-howtobuy-tabs-esea:last-child{
+    display: flex !important;
+    justify-content: center !important;
+}
+.csgo-boost-howtobuy-tab-esea{
+    display: flex;
+    justify-content: center;
+    width: fit-content !important;
 }
 
 .csgo-boost-howtobuy-tab-esea svg {
-    width: 70% !important;
-    height: 70% !important;
+    width: 100% !important;
+    height: 100% !important;
 }
 
 .csgo-boost-faceit-tabs {
