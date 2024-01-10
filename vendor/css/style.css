@@ -514,6 +514,9 @@ body {
 .csgo-HomeFeatures-innerSection:nth-child(1) {
     margin-bottom: 30px;
 }
+.csgo-HomeFeatures-innerSection:nth-child(2) {
+    display: none;
+}
 
 .csgo-HomeFeatures-innerSection h3 {
     color: #EFF3FB;
@@ -646,6 +649,9 @@ body {
 .csgo-HomeBoosting-services-section:nth-child(3) {
     display: flex;
     align-items: center;
+}
+.csgo-HomeBoosting-services-section-none{
+    display: none !important;
 }
 
 .csgo-HomeBoosting-services-box {
@@ -2314,7 +2320,7 @@ body {
 
 .csgo-boost-whychooseus-box {
     display: flex;
-    justify-content: center;
+    justify-content: start !important;
     height: auto;
 }
 
@@ -3099,6 +3105,12 @@ body {
 }
 
 @media only screen and (max-width: 950px) {
+    .csgo-HomeBoosting-services-section-none{
+        display: block !important;
+    }
+    .csgo-HomeBoosting-services-section-smallHide{
+        display: none !important;
+    }
     .csgo-HomeBoosting-services-container {
         height: auto;
     }
@@ -3493,6 +3505,10 @@ body {
     .csgo-boost-howtobuy-tab {
         margin: 0 !important;
     }
+    .csgo-boost-faceit-tab:nth-child(3){
+        margin: 0 !important;
+        margin-left: 30px !important;
+    }
 
     .csgo-howtobuy-conatianer .tabs-vector-coaching {
         height: 145vh !important;
@@ -3809,6 +3825,9 @@ body {
 }
 
 @media only screen and (max-width: 440px) {
+    .csgo-header-container{
+        padding: 10px 0px;
+    }
     .csgo-HomeWhyChoose-services-detail-section {
         right: 0px;
         width: 100%;

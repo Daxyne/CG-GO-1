@@ -45,7 +45,10 @@
                         <button class="csgo-login-btn responsive-login-btn mt-10px">Track Order</button>
                     </ul>
                 </div>
-                <button class="csgo-login-btn">Track Order</button>
+                <div>
+                    <button class="csgo-login-btn">Track Order</button>
+                    <button class="csgo-login-btn">Track Order</button>
+                </div>
                 <!--  -->
                 <div class="sidebar-header">
                     <div class="burger-line"></div>
@@ -286,9 +289,19 @@
                                 </p>
                             </div>
                         </div>
+                        <div class="csgo-HomeBoosting-services-section csgo-HomeBoosting-services-section-none">
+                            <div class="csgo-HomeBoosting-services-box">
+                                <h3>ONLY LEGIT CS:GO BOOSTERSSSS</h3>
+                                <p>We usually start every boosting order within 1h after receiving the money. In most
+                                    cases
+                                    our boosters need only few hours to rank up. They play at least 5-15 matches per
+                                    day.
+                                </p>
+                            </div>
+                        </div>
                         <div class="csgo-HomeBoosting-services-section">
                             <div class="csgo-HomeBoosting-services-box">
-                                <h3>ONLY LEGIT CS:GO BOOSTERS</h3>
+                                <h3>ONLY LEGIT CS:GO BOOSTERSsssss</h3>
                                 <p>We usually start every boosting order within 1h after receiving the money. In most
                                     cases
                                     our boosters need only few hours to rank up. They play at least 5-15 matches per
@@ -311,7 +324,7 @@
                     </div>
                     <!--  -->
 
-                    <div class="csgo-HomeBoosting-services-section">
+                    <div class="csgo-HomeBoosting-services-section csgo-HomeBoosting-services-section-smallHide">
                         <div class="csgo-HomeBoosting-services-box">
                             <h3>ONLY LEGIT CS:GO BOOSTERS</h3>
                             <p>We usually start every boosting order within 1h after receiving the money. In most cases
@@ -344,21 +357,24 @@
                     <div class="csgo-HomeWhyChoose-happyCustomers-box">
                         <img src="./assets/img/Rectangle 10.png" alt="">
                         <div class="csgo-HomeWhyChoose-happyCustomers-txt-box">
-                            <h5>20k</h5>
+                            <!-- <h5>20k</h5> -->
+                            <h5 id="happyCustomersCount">0</h5>
                             <h6>HAPPY CUSTOMERS</h6>
                         </div>
                     </div>
                     <div class="csgo-HomeWhyChoose-happyCustomers-box">
                         <img src="./assets/img/Rectangle 10.png" alt="">
                         <div class="csgo-HomeWhyChoose-happyCustomers-txt-box">
-                            <h5>8</h5>
+                            <!-- <h5>8</h5> -->
+                            <h5 id="boostingYearsCount">0</h5>
                             <h6>YEAS IN BOOSTING</h6>
                         </div>
                     </div>
                     <div class="csgo-HomeWhyChoose-happyCustomers-box">
                         <img src="./assets/img/Rectangle 10.png" alt="">
                         <div class="csgo-HomeWhyChoose-happyCustomers-txt-box">
-                            <h5>30k</h5>
+                            <!-- <h5>30k</h5> -->
+                            <h5 id="ordersCompletedCount">0<span></h5>
                             <h6>ORDERS COMPLETED</h6>
                         </div>
                     </div>
@@ -591,6 +607,25 @@
 
 
     <!-- Script -->
+    <script>
+        function animateCount(elementId, targetValue, suffix = '') {
+            let currentCount = 0;
+            const interval = setInterval(function () {
+                currentCount += 100;
+                if (currentCount <= targetValue) {
+                    document.getElementById(elementId).textContent = (currentCount / 100) + suffix;
+                } else {
+                    document.getElementById(elementId).textContent = targetValue / 100 + suffix;
+                    clearInterval(interval);
+                }
+            }, 100); // You can adjust the interval duration as needed
+        }
+
+        // Call the animation function for each counter with 'k' suffix for thousands
+        animateCount('happyCustomersCount', 2000, 'k');
+        animateCount('boostingYearsCount', 800, ''); // No suffix for this counter
+        animateCount('ordersCompletedCount', 3000, 'k');
+    </script>
     <script src="./vendor/js/app.js"></script>
     <script src="./vendor/js/carousel.js"></script>
 </body>
