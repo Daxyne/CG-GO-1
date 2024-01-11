@@ -70,13 +70,13 @@ accordionItemHeaders.forEach((accordionItemHeader) => {
 /* FAQS End */
 
 
-// const slider = document.getElementById("myRange");
-// const sliderValue = document.getElementById("sliderValue");
+const slider = document.getElementById("myRange");
+const sliderValue = document.getElementById("sliderValue");
 
-// // Update the slider value text when the slider is moved
-// slider.addEventListener("input", function() {
-//     sliderValue.textContent = this.value;
-// });
+// Update the slider value text when the slider is moved
+slider.addEventListener("input", function() {
+    sliderValue.textContent = this.value;
+});
 
 // BURGER JS
 const burgerIcon = document.querySelector('.sidebar-header');

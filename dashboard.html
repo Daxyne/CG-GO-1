@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./vendor/css/style.css">
+    <link rel="stylesheet" href="./vendor/css/dashboard.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=nippo@500,700,400&display=swap" rel="stylesheet">
+    <title>CS:GO</title>
+    <style>
+        #tabs-container {
+            display: flex;
+            background: #131320;
+            color: white;
+        }
+
+        .tab {
+            flex: 1;
+            padding: 15px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .tab.active {
+            background-color: red;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 20px 0px;
+            width: 82%;
+            margin: auto;
+        }
+
+        #dashboard-content {
+            display: block;
+        }
+
+        #logout-content {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-site-container">
+        <!-- csgo-UpperHeader Start -->
+        <div class="csgo-upperHeader-container">
+            <img src="./assets/logo.svg" alt="">
+        </div>
+        <!-- csgo-UpperHeader End -->
+
+        <div>
+            <div id="tabs-container">
+                <div class="tab" onclick="showContent('dashboard')">Dashboard</div>
+                <div class="tab" onclick="showContent('order')">Order</div>
+                <div class="tab" onclick="showContent('profile')">Profile</div>
+                <div class="tab" onclick="showContent('logout')">Logout</div>
+            </div>
+
+            <div id="dashboard-content" class="tab-content">
+                <h2>Dashboard Content Goes Here</h2>
+            </div>
+
+            <div id="order-content" class="tab-content">
+                <h2>Order Content Goes Here</h2>
+            </div>
+
+            <div id="profile-content" class="tab-content">
+                <h2>Profile Content Goes Here</h2>
+            </div>
+
+            <div id="logout-content" class="tab-content">
+                <h2>Logout Content Goes Here</h2>
+            </div>
+        </div>
+
+        <!-- csgo-Footer Section Start -->
+        <div class="lowerfooter">
+            <h6>2014 - 2023 © THEMEOWL.NET. All rights reserved.</h6>
+            <p>Counter-Strike: Global Offensive is a registered trademark of Valve Corporation Company We are in no way
+                affiliated with, associated with or endorsed by Valve Corporation.</p>
+        </div>
+        <!-- csgo-Footer Section End -->
+    </div>
+
+    <script>
+        function showContent(tabName) {
+            // Hide all tab contents
+            document.querySelectorAll('.tab-content').forEach(function (tabContent) {
+                tabContent.style.display = 'none';
+            });
+
+            // Remove active class from all tabs
+            document.querySelectorAll('.tab').forEach(function (tab) {
+                tab.classList.remove('active');
+            });
+
+            // Show the selected tab content
+            document.getElementById(tabName + '-content').style.display = 'block';
+
+            // Add active class to the clicked tab
+            document.querySelector('.tab[data-tab="' + tabName + '"]').classList.add('active');
+        }
+    </script>
+
+    <!-- Script -->
+    <script src="./vendor/js/app.js"></script>
+    <script src="./vendor/js/carousel.js"></script>
+</body>
+
+</html>
